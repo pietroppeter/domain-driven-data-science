@@ -1,3 +1,5 @@
+## agenda
+
 3 main parts (domain, logistics, stories)
 
 - intro
