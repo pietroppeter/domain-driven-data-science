@@ -35,15 +35,6 @@ template agileTheme*() =
   display: block;
   text-align: left;
 }
-
-li::marker {
-  color: $1;
-  content: "»";
-}
-
-li {
-  padding-left: 12px;
-}
 """ % [agileDarkBlue, agileWhite, agileLightBlue]
 
 template myInit*(sourceFileRel = "my.nim") =

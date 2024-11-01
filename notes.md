@@ -1,10 +1,42 @@
+## slides
+
+zero/index
+- title [x]
+- agenda [x]
+  - why no numbered bullet points?
+- me [x]
+  - me/agilelab (maybe later split in 2?)
+  - tatooine in the bakground? no, at most add a slide
+
+one: domain
+- 1) examples (list of domains)
+- 2) definition?
+- 3) venn diagram (and its history)
+  - parentheses on Data (Viz/Analysis, Engineering), general Data skills?
+- 4) start problematizing: how much content we produce on these two?
+- 5) more problems: failure of DS/ML/AI project, are they due to lack of algorithm or code and skills? or maybe lack of business values?
+  - examples? hint that I will tell stories later
+  - (at some point a note on terminology? introduce the DS/ML/AI thing?)
+- 6) claims and introduce the rest of the talk
+- 7) parentheses on Domain Driven Design
+- 8) and on Data Mesh
+- 9) and again on AgileLab
+- 10) data science as a domain (industry vs research, internal vs external, consulting/product, B2B vs B2C) - sort of a disclaimers
+
+two: logistics
+
+
+three: stories
+
+four: ending, thanks, references
+
 ## agenda
 
 3 main parts (domain, logistics, stories)
 
 - intro
   - agenda
-  - me
+  - me/context
     - math
     - like programming
     - started in data science 10 years ago
@@ -45,7 +77,7 @@
   - ... (other stories from TG)
   - story of warehouse project
   - story of optical networks 
-- methods
+- methods/ideas
   - write a business and domain essential
   - read domain books
   - establish ubiquitous language (and iterate on it)
