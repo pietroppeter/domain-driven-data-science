@@ -11,12 +11,12 @@ template aSlide* =
 """
 
 template sectionSlide* =
-  slide nbText "# 1. Domain is important"
+  slide nbText "# 3. Stories & Ideas"
 
 template all* =
   sectionSlide
 
 when isMainModule:
-  myInit("domain.nim")
+  myInit("stories.nim")
   all
   nbSave

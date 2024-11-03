@@ -1,5 +1,7 @@
 import nimib, nimislides
 import my
+import domain, logistics, stories
+
 
 template titleSlide* =
   slide:
@@ -59,4 +61,10 @@ when isMainModule:
   titleSlide
   agendaSlide
   meSlide
+  slide:
+    domain.all
+  slide:
+    logistics.all
+  slide:
+    stories.all
   nbSave
