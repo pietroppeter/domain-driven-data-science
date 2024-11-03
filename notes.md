@@ -24,11 +24,40 @@ one: domain
 - 10) data science as a domain (industry vs research, internal vs external, consulting/product, B2B vs B2C) - sort of a disclaimers
 
 two: logistics
-
+- 1) what is logistics (def and quote)
+- 2) what is Supply Chain (mgmt, new term)
+- 3) example of companies
+- 4) flow of information vs flow of materials
+- 5) importance of L&SC in a changing world (competitive advantage on service and cost)
+- 6) concept: safety stock
+- 7) concept: lead time
+- 11) other concepts: lost sales vs out of stock
+- 8) 3 pillars of e2e planning: demand, fulfillment, replenishment
+- 9) tech: time series forecasting
+  - techniques, stats vs ML vs neural, (nixtla), M5 competition
+- 10) tech: research optimization (e.g. replenishment, VRP)
+  - OR specialist as original data scientists? Pascal's course
 
 three: stories
+- 1) npi: why they don't use it?
+  - explain NPI again
+  - problem
+  - interface
+- 2) again on npi: random forest vs boosted regressors
+- 3) pos demand sensing? a failure? or in general success of TG because we were domain experts
+- 4) talking to business stakeholders
+  - interview and discovery
+  - benefit of a RAD interface (e.g. streamlit)
+- 5) document business and domain essentials
+- 6) ubiquitous language, use the appropriate language
+- 7) how to learn: internet (youtube), follow business people, specialist books
+  - (also chatgpt for sure, but you need to be careful)
+- 8) get inspired by domain: Toyota's 4S and data processes
+- 9) data generation process: e.g. data exploration of inbound vs outbound
+- 10) zeroth rule of Machine Learning: start with no ML (and further rules on complex heuristics)
+- 11) connect to business value as much as possible
 
-four: ending, thanks, references
+four: ending, thanks, references (connect through socials)
 
 ## agenda
 
