@@ -40,7 +40,7 @@ two: logistics [.1234567890]
 - 10) tech: research optimization (e.g. replenishment, VRP)
   - OR specialist as original data scientists? Pascal's course
 
-three: stories [0123456789]
+three: stories [.0123456789]
 - 1) npi: why they don't use it?
   - explain NPI again
   - problem
@@ -57,7 +57,7 @@ three: stories [0123456789]
 - 7) how to learn: internet (youtube), follow business people, specialist books
   - (also chatgpt for sure, but you need to be careful)
 - 8) get inspired by domain: Toyota's 4S and data processes
-- 9) data generation process: e.g. data exploration of inbound vs outbound
+- 9) data generation process: e.g. data exploration of inbound vs outbound [x]
 - 10) zeroth rule of Machine Learning: start with no ML (and further rules on complex heuristics)
 
 four: ending, thanks, references (connect through socials)

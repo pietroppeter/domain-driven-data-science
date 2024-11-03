@@ -43,6 +43,7 @@ template failureProjects* =
 
 template all* =
   sectionSlide
+  failureProjects
 
 when isMainModule:
   myInit("domain.nim")
