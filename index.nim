@@ -24,7 +24,8 @@ template agendaSlide* =
 - mention appendix on DDD/Data Mesh? or it is part one
 """
 
-template meSlide* = 
+template meSlide* =
+  # todo: make it appear one by one
   slide:
     nbText """
 ### 👋 Pietro (he/him) 👨‍👩‍👧🇮🇹🍝🏔️⛵️🎭
@@ -54,7 +55,7 @@ template aSlide* =
 
 
 when isMainModule:
-  myInit("index")
+  myInit("index.nim")
   titleSlide
   agendaSlide
   meSlide
