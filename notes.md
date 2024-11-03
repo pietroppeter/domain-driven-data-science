@@ -1,4 +1,4 @@
-## slides
+## slides list
 
 zero/index
 - title [x]
@@ -8,11 +8,11 @@ zero/index
   - me/agilelab (maybe later split in 2?)
   - tatooine in the bakground? no, at most add a slide
 
-one: domain
+one: domain [01234567890]
 - 1) examples (list of domains)
 - 2) definition?
 - 3) venn diagram (and its history)
-  - parentheses on Data (Viz/Analysis, Engineering), general Data skills?
+  - parentheses on Data (Viz/Analysis, Engineering), general Data skills? yes, two things missing DE and DA
 - 4) start problematizing: how much content we produce on these two?
 - 5) more problems: failure of DS/ML/AI project, are they due to lack of algorithm or code and skills? or maybe lack of business values?
   - examples? hint that I will tell stories later
@@ -23,8 +23,8 @@ one: domain
 - 9) and again on AgileLab
 - 10) data science as a domain (industry vs research, internal vs external, consulting/product, B2B vs B2C) - sort of a disclaimers
 
-two: logistics
-- 1) what is logistics (def and quote)
+two: logistics [.1234567890]
+- 1) what is logistics (def and quote) [x]
 - 2) what is Supply Chain (mgmt, new term)
 - 3) example of companies
 - 4) flow of information vs flow of materials
@@ -38,13 +38,15 @@ two: logistics
 - 10) tech: research optimization (e.g. replenishment, VRP)
   - OR specialist as original data scientists? Pascal's course
 
-three: stories
+three: stories [0123456789]
 - 1) npi: why they don't use it?
   - explain NPI again
   - problem
   - interface
 - 2) again on npi: random forest vs boosted regressors
 - 3) pos demand sensing? a failure? or in general success of TG because we were domain experts
+- 11) connect to business value as much as possible
+- 12) link to product/project management??
 - 4) talking to business stakeholders
   - interview and discovery
   - benefit of a RAD interface (e.g. streamlit)
@@ -55,7 +57,6 @@ three: stories
 - 8) get inspired by domain: Toyota's 4S and data processes
 - 9) data generation process: e.g. data exploration of inbound vs outbound
 - 10) zeroth rule of Machine Learning: start with no ML (and further rules on complex heuristics)
-- 11) connect to business value as much as possible
 
 four: ending, thanks, references (connect through socials)
 
@@ -145,3 +146,7 @@ a section could be: what domain knowledge can give back to Data Science and shou
 
 disclaimer: will restrict to Data Science in the business domain (no science)
 
+## nice to haves
+
+- better CSS for quotes (a background?) and headers (all caps? a different font?)
+- two emphasis (blue and orange) and NO italic
