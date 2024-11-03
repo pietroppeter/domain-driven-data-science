@@ -25,16 +25,18 @@ one: domain [01234567890]
 
 two: logistics [.1234567890]
 - 1) what is logistics (def and quote) [x]
+  - 4) flow of information vs flow of materials (diagram!)
 - 2) what is Supply Chain (mgmt, new term)
 - 3) example of companies
-- 4) flow of information vs flow of materials
 - 5) importance of L&SC in a changing world (competitive advantage on service and cost)
 - 6) concept: safety stock
 - 7) concept: lead time
 - 11) other concepts: lost sales vs out of stock
 - 8) 3 pillars of e2e planning: demand, fulfillment, replenishment
 - 9) tech: time series forecasting
-  - techniques, stats vs ML vs neural, (nixtla), M5 competition
+  - techniques, stats vs ML vs neural, (nixtla), M5 competition, (hyndman book)
+  - forecasting: modelling, algorithms, evaluation
+  - hierarchical forecasting
 - 10) tech: research optimization (e.g. replenishment, VRP)
   - OR specialist as original data scientists? Pascal's course
 

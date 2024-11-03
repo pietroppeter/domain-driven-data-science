@@ -35,6 +35,10 @@ template agileTheme*() =
   display: block;
   text-align: left;
 }
+
+li {
+  padding-left: 12px;
+}
 """ % [agileDarkBlue, agileWhite, agileLightBlue]
 
 template myInit*(sourceFileRel = "my.nim") =
@@ -53,7 +57,7 @@ template myInit*(sourceFileRel = "my.nim") =
   nb.partials["nimibCodeAnimate"] = nb.partials["animateCode"]
   nb.renderPlans["nimibCodeAnimate"] = nb.renderPlans["animateCode"]
   nb.partials["logo"] = """
-<div id="agileLabLogo" style="background: url(https://www.agilelab.it/hubfs/logo-agilelab.png);
+<div id="agileLabLogo" style="background: url(./images/logo-agilelab.png);
 background-repeat: no-repeat;
 position: absolute;
 bottom: 0px;
