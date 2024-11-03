@@ -13,10 +13,38 @@ template aSlide* =
 template sectionSlide* =
   slide nbText "# 1. Domain is important"
 
+template failureProjects* =
+  slide:
+    nbText "### Failure of DS/ML/AI Projects"
+    nbText "some reasons why projects might fail" 
+    columns:
+      column:
+        nbText """
+#### Technology
+
+- data quality
+- model accuracy
+- implementation performance
+- ...
+"""
+      column:
+        nbText """
+#### Business
+
+- stakeholders lost interest
+- not valuable
+- not used
+- ...
+"""
+    speakerNote """
+- idea is domain expertise helps mostly to avoid business related failures
+- but we will also see that it can help also in some tech tasks (data exploration, feature engineering, ...)
+"""
+
 template all* =
   sectionSlide
 
 when isMainModule:
   myInit("domain.nim")
-  all
+  failureProjects
   nbSave

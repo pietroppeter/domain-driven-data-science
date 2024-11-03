@@ -8,13 +8,13 @@ zero/index
   - me/agilelab (maybe later split in 2?)
   - tatooine in the bakground? no, at most add a slide
 
-one: domain [01234567890]
+one: domain [.1234567890]
 - 1) examples (list of domains)
 - 2) definition?
 - 3) venn diagram (and its history)
   - parentheses on Data (Viz/Analysis, Engineering), general Data skills? yes, two things missing DE and DA
 - 4) start problematizing: how much content we produce on these two?
-- 5) more problems: failure of DS/ML/AI project, are they due to lack of algorithm or code and skills? or maybe lack of business values?
+- 5) more problems: failure of DS/ML/AI project [x]
   - examples? hint that I will tell stories later
   - (at some point a note on terminology? introduce the DS/ML/AI thing?)
 - 6) claims and introduce the rest of the talk
