@@ -16,9 +16,9 @@ template sectionSlide* =
 template dataGeneratingProcess* = 
   slide:
     nbText """
-### Data Generating Process
+### 🏗️ Data Generating Process
 
-Think about it e.g. during Data Exploration
+Story: Data Exploration of Warehouse data
 """
     columns:
       column:
@@ -36,11 +36,38 @@ Think about it e.g. during Data Exploration
 """ # more cases?
 
 
+template npiTrust* = 
+  slide:
+    nbText """
+### 🔮 Trust in the model
+
+Story: a model for forecast of New Product sales
+"""
+    columns:
+      column:
+        nbImg "images/npi.png", "300px"
+      column:
+        nbText """
+- model is better than baseline
+- users do not trust the numbers
+- they are used to a different process
+- does interpretability help?
+"""
+    speakerNote """
+- first introduce NPI and why it is important
+- give context: fashion (glasses, shoes, ...)
+- 1st issue: Supply Chain people do not own the process
+- (2nd issue: different process) regional managers making aggregate estimates by product categories
+- (interpretability) e.g. SHAP values
+"""
+
+
 template all* =
   sectionSlide
   dataGeneratingProcess
+  npiTrust
 
 when isMainModule:
   myInit("stories.nim")
-  dataGeneratingProcess
+  npiTrust
   nbSave

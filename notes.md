@@ -18,12 +18,12 @@ zero/index
   - me/agilelab (maybe later split in 2?)
   - tatooine in the bakground? no, at most add a slide
 
-one: domain [..234567890]
+one: domain [...3456789]
 - 1) examples (list of domains)
 - 2) definition?
 - 3) venn diagram (and its history) [x]
   - parentheses on Data (Viz/Analysis, Engineering), general Data skills? yes, two things missing DE and DA
-- 4) start problematizing: how much content we produce on these two?
+- 4) start problematizing: how much content we produce on these two? memes! [x]
 - 5) more problems: failure of DS/ML/AI project [x]
   - examples? hint that I will tell stories later
   - (at some point a note on terminology? introduce the DS/ML/AI thing?)
@@ -33,7 +33,7 @@ one: domain [..234567890]
 - 9) and again on AgileLab
 - 10) data science as a domain (industry vs research, internal vs external, consulting/product, B2B vs B2C) - sort of a disclaimers
 
-two: logistics [.1234567890]
+two: logistics [.123456789]
 - 1) what is logistics (def and quote) [x]
   - 4) flow of information vs flow of materials (diagram!) [x]
   - better quote [x]
@@ -51,7 +51,7 @@ two: logistics [.1234567890]
 - 10) tech: research optimization (e.g. replenishment, VRP)
   - OR specialist as original data scientists? Pascal's course
 
-three: stories [.0123456789]
+three: stories [..23456789]
 - 1) npi: why they don't use it?
   - explain NPI again
   - problem
