@@ -34,10 +34,11 @@ one: domain [..234567890]
 
 two: logistics [.1234567890]
 - 1) what is logistics (def and quote) [x]
-  - 4) flow of information vs flow of materials (diagram!)
+  - 4) flow of information vs flow of materials (diagram!) [x]
+  - better quote [x]
 - 2) what is Supply Chain (mgmt, new term)
+  - 5) importance of L&SC in a changing world (competitive advantage on service and cost)
 - 3) example of companies
-- 5) importance of L&SC in a changing world (competitive advantage on service and cost)
 - 6) concept: safety stock
 - 7) concept: lead time
 - 11) other concepts: lost sales vs out of stock
@@ -134,6 +135,9 @@ four: ending, thanks, references (connect through socials)
 - article: [The Rise of the Data Engineer](https://medium.com/free-code-camp/the-rise-of-the-data-engineer-91be18f1e603)
 - [tweet by Chelsea](https://x.com/ChelseaParlett/status/1831131865115488490) "If your first data hire is a data scientist, what you really hired is an inexperienced data engineer"
 - article on venn diagram [critique by Ullman 2021](https://www.bigdatawire.com/2021/08/18/what-is-data-science-a-turing-award-winner-shares-his-view/)
+- slides on logistics and supply chain https://management.web.uniroma1.it/sites/default/files/Dalla%20logistica%20integrata%20al%20supply%20chain%20management.pdf
+- quote Art of War https://suntzusaid.com/book/7
+- logistics as a homonym https://en.wikipedia.org/wiki/Logistics#Origin
 
 ## random notes
 

@@ -17,26 +17,24 @@ template whatLogistic* =
   slide:
     nbText """
 ### What is Logistics?
-
-Logistics is the process of strategically managing the procurement,
-movement and storage of materials, parts and finished inventory
-(and related information flows)
-
-> before the fighting proper,
-> battle is won or lost by quatermasters
->
-> -- Rommel
+"""
+    nbImage "images/logistics.png"
+    nbTextSmall """
+"an army without its baggage train is lost;
+without provisions it is lost;
+without bases of supply it is lost"
+Art of War, Sun Tzu, 5th BC
 """
     speakerNote """
+- def: Logistics is the process of strategically managing the procurement,
+movement and storage of materials, parts and finished inventory
+(and related information flows)
 - def continues: "...through the organisation and its marketing channels in such a way
   that current and future profitability are maximised through the cost-effective fulfillment of orders"
-- you will always find a quote about how logistics is very old thing tied both to military and trade
-  (you can use it think about Roman Empire if you want)
-""" # find a better quote? the engineer guy from Sapienza had good slides
-# add diagram
-# ------ Materials flow ------>
-# Suppliers | Procurement - Operations - Distribution | Customers
-# <----- Information flow -----
+- logistics is homonym of the logistics curve, comes from French Marechal de Logis, the officer in charge of the functioning of an army
+- logistics is now a cornerstone of international trade
+"""
+
 
 template all* =
   sectionSlide
