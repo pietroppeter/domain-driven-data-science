@@ -1,3 +1,12 @@
+## Mon
+
+- venn diagram slide [x]
+  - the original or another one? another one (after reading Ullman's critique) [x]
+  - ok make my own! code - math - domain. Done https://app.creately.com/d/VhWArkeN52M/edit
+    - not happy about the colors. Frustrated about not being to change it. Get over it and suck it up! [x]
+- add nbImg template to be able to specify width [x]
+- post on zulip about it
+
 ## slides list
 
 zero/index
@@ -123,6 +132,7 @@ four: ending, thanks, references (connect through socials)
 - article: [The Evolution of The Data Engineer: A Look at The Past, Present & Future](https://airbyte.com/blog/data-engineering-past-present-and-future), Barrera 2022
 - article: [The Rise of the Data Engineer](https://medium.com/free-code-camp/the-rise-of-the-data-engineer-91be18f1e603)
 - [tweet by Chelsea](https://x.com/ChelseaParlett/status/1831131865115488490) "If your first data hire is a data scientist, what you really hired is an inexperienced data engineer"
+- article on venn diagram [critique by Ullman 2021](https://www.bigdatawire.com/2021/08/18/what-is-data-science-a-turing-award-winner-shares-his-view/)
 
 ## random notes
 

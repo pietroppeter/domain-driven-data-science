@@ -41,11 +41,17 @@ template failureProjects* =
 - but we will also see that it can help also in some tech tasks (data exploration, feature engineering, ...)
 """
 
+template vennDiagram* =
+  slide:
+    nbImg("images/venn1.png", width="500px")
+    reference "[Drew Conway, 2010](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram)"
+
 template all* =
   sectionSlide
+  vennDiagram
   failureProjects
 
 when isMainModule:
   myInit("domain.nim")
-  failureProjects
+  vennDiagram
   nbSave
