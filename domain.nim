@@ -44,7 +44,7 @@ template failureProjects* =
 template vennDiagram* =
   slide:
     nbImg("images/venn1.png", width="500px")
-    reference "[Drew Conway, 2010](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram)"
+    reference "[Data Science Venn Diagram, Drew Conway, 2010](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram)"
 
 template all* =
   sectionSlide
