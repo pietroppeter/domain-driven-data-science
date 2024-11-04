@@ -6,6 +6,7 @@
     - not happy about the colors. Frustrated about not being to change it. Get over it and suck it up! [x]
 - add nbImg template to be able to specify width [x]
 - post on RC zulip about it [x]
+- improve venn diagram with excalidraw [x]
 
 ## slides list
 
@@ -166,4 +167,5 @@ disclaimer: will restrict to Data Science in the business domain (no science)
 ## nice to haves
 
 - better CSS for quotes (a background?) and headers (all caps? a different font?)
+  - better style for art of war quote
 - two emphasis (blue and orange) and NO italic
