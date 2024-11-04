@@ -16,6 +16,24 @@ template nbTextSmall*(text: string) =
   nbText: text
   nb.blk.command = "nbTextSmall"
 
+template nbImg*(url: string, width: string, caption = "", alt = "") =
+  newNbSlimBlock("nbImg"):
+    nb.blk.context["url"] = nb.relToRoot(url) 
+    nb.blk.context["width"] = width
+    nb.blk.context["alt_text"] = 
+      if alt == "":
+        caption
+      else:
+        alt
+        
+    nb.blk.context["caption"] = caption
+
+template addNbImg* =
+  nb.partials["nbImg"] = """<figure>
+<img src="{{url}}" alt="{{alt_text}}" width="{{width}}">
+<figcaption>{{caption}}</figcaption>
+</figure>"""
+
 template reference*(text: string) =
   nbTextSmall: text
 
@@ -45,6 +63,7 @@ template myInit*(sourceFileRel = "my.nim") =
   nbInit(thisFileRel=sourceFileRel, theme=revealTheme)
   agileTheme()
   addNbTextSmall
+  addNbImg
   nbRawHtml """
 <style>
 .reveal strong {
