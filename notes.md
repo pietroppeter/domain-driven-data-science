@@ -52,7 +52,7 @@ two: logistics [.123456789]
   - OR specialist as original data scientists? Pascal's course
 
 three: stories [..23456789]
-- 1) npi: why they don't use it?
+- 1) npi: why they don't use it? [x]
   - explain NPI again
   - problem
   - interface

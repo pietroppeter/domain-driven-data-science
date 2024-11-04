@@ -14,7 +14,7 @@ template sectionSlide* =
   slide nbText "# 3. Stories & Ideas"
 
 template dataGeneratingProcess* = 
-  slide:
+  autoAnimateSlides(2):
     nbText """
 ### 🏗️ Data Generating Process
 
@@ -22,7 +22,10 @@ Story: Data Exploration of Warehouse data
 """
     columns:
       column:
-        nbImg "images/pallet.png", "300px"
+        showAt(1):
+          nbImg "images/pallet-inbound.png", "300px"
+        showAt(2):
+          nbImg "images/pallet-outbound.png", "300px"
       column:
         nbText """
 - order data: many more rows for outbound than inbound orders, why?
@@ -69,5 +72,5 @@ template all* =
 
 when isMainModule:
   myInit("stories.nim")
-  npiTrust
+  dataGeneratingProcess
   nbSave
