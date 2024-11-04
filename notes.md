@@ -5,7 +5,7 @@
   - ok make my own! code - math - domain. Done https://app.creately.com/d/VhWArkeN52M/edit
     - not happy about the colors. Frustrated about not being to change it. Get over it and suck it up! [x]
 - add nbImg template to be able to specify width [x]
-- post on zulip about it
+- post on RC zulip about it [x]
 
 ## slides list
 
@@ -17,10 +17,10 @@ zero/index
   - me/agilelab (maybe later split in 2?)
   - tatooine in the bakground? no, at most add a slide
 
-one: domain [.1234567890]
+one: domain [..234567890]
 - 1) examples (list of domains)
 - 2) definition?
-- 3) venn diagram (and its history)
+- 3) venn diagram (and its history) [x]
   - parentheses on Data (Viz/Analysis, Engineering), general Data skills? yes, two things missing DE and DA
 - 4) start problematizing: how much content we produce on these two?
 - 5) more problems: failure of DS/ML/AI project [x]
@@ -67,6 +67,7 @@ three: stories [.0123456789]
   - (also chatgpt for sure, but you need to be careful)
 - 8) get inspired by domain: Toyota's 4S and data processes
 - 9) data generation process: e.g. data exploration of inbound vs outbound [x]
+  - warehouse image, picked a mix pallet one [x]
 - 10) zeroth rule of Machine Learning: start with no ML (and further rules on complex heuristics)
 
 four: ending, thanks, references (connect through socials)

@@ -18,11 +18,11 @@ template dataGeneratingProcess* =
     nbText """
 ### Data Generating Process
 
-Think about it during Data Exploration
+Think about it e.g. during Data Exploration
 """
     columns:
       column:
-        nbImage "a warehouse"
+        nbImg "images/pallet.png", "300px"
       column:
         nbText """
 - order data: many more rows for outbound than inbound orders, why?
