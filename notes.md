@@ -33,23 +33,25 @@ one: domain [...3456789]
 - 9) and again on AgileLab
 - 10) data science as a domain (industry vs research, internal vs external, consulting/product, B2B vs B2C) - sort of a disclaimers
 
-two: logistics [...3456789]
+two: logistics [....456789]
 - 1) what is logistics (def and quote) [x]
-  - 4) flow of information vs flow of materials (diagram!) [x]
+  - flow of information vs flow of materials (diagram!) [x]
   - better quote [x]
 - 2) modern Supply Chains [x]
-  - 5) importance of L&SC in a changing world (competitive advantage on service and cost)
-- 8) e2e planning: demand, fulfillment, replenishment [x]
-  - 11) other concepts: lost sales (due to out of stock) vs overstock
-- 7) concept: lead time
-  - 6) concept: safety stock
-- 9) tech: time series forecasting
+  - importance of L&SC in a changing world (competitive advantage on service and cost)?
+- 3) Planning: demand, service, stock [x]
+  - other concepts: lost sales (due to out of stock) vs overstock?
+- 4) uncertainty (lead time and safety stock) [x]
+- 5) constraints
+  - many
+- 6) tech: time series forecasting
   - techniques, stats vs ML vs neural, (nixtla), M5 competition, (hyndman book)
   - forecasting: modelling, algorithms, evaluation
   - hierarchical forecasting
-- 10) tech: research optimization (e.g. replenishment, VRP)
+- 7) tech: research optimization (e.g. replenishment, VRP)
   - OR specialist as original data scientists? Pascal's course
-- 3) example of companies and specific issues
+- 8) complexity slide?
+  - example of companies and specific issuesx
   - spare parts, very erratic demand
   - dairy products (yogurts), highly promoted demand
   - fashion/(consumer goods?), short product life cycles

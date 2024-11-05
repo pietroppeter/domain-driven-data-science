@@ -67,13 +67,25 @@ template e2ePlanning* =
         nbText "**Stock**"
         nbImg("images/stock.png", "300px")
 
+template uncertainty* =
+  slide:
+    nbText "### Uncertainity"
+    nbText "Demand is uncertain, Supply is uncertain"
+    columns:
+      column:
+        nbText "#### **Lead Time**"
+        nbImg("images/lead-time.png", "500px")
+      column:
+        nbText "#### **Safety Stock**\n\nextra stock due to uncertainty to mitigate risk of stock outs"
+
 template all* =
   sectionSlide
   whatLogistic
   modernSupplyChains
   e2ePlanning
+  uncertainty
 
 when isMainModule:
   myInit("logistics.nim")
-  e2ePlanning
+  uncertainty
   nbSave
