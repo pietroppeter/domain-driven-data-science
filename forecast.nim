@@ -75,15 +75,29 @@ template evaluation* =
     speakerNote """
 """
 
+template problems* =
+  slide:
+    columns:
+      column:
+        nbText "**Seasonality**"
+        nbImage "images/seasonality.png"
+      column:
+        nbText "**Promotions**"
+        nbImage "images/promotions.png"
+      column:
+        nbText "**Initialization**"
+        nbImage "images/initialization.png"
+
 template all* =
   forecastSection
   modelling
   algorithms
   evaluation
+  problems
   pymiTalkForecastingNixtla
 
 
 when isMainModule:
   myInit("forecast.nim")
-  evaluation
+  problems
   nbSave
