@@ -33,10 +33,11 @@ one: domain [...3456789]
 - 9) and again on AgileLab
 - 10) data science as a domain (industry vs research, internal vs external, consulting/product, B2B vs B2C) - sort of a disclaimers
 
-two: logistics [....456789]
+two: logistics [......6789]
 - 1) what is logistics (def and quote) [x]
   - flow of information vs flow of materials (diagram!) [x]
   - better quote [x]
+- 1.5) storage and transportation [x]
 - 2) modern Supply Chains [x]
   - importance of L&SC in a changing world (competitive advantage on service and cost)?
 - 3) Planning: demand, service, stock [x]
@@ -45,9 +46,12 @@ two: logistics [....456789]
 - 5) constraints
   - many
 - 6) tech: time series forecasting
-  - techniques, stats vs ML vs neural, (nixtla), M5 competition, (hyndman book)
+  - forecast dimensions / modelling
+  - techniques, stats vs ML vs neural, (nixtla), M5 competition, foundational models (hyndman book)
   - forecasting: modelling, algorithms, evaluation
-  - hierarchical forecasting
+  - hierarchical forecasting and probabilistic forecasting (conformal prediction)
+  - forecasting problems: seasonality, promotion, initialization
+  - link to my talk on forecasting! [x]
 - 7) tech: research optimization (e.g. replenishment, VRP)
   - OR specialist as original data scientists? Pascal's course
 - 8) complexity slide?
@@ -71,6 +75,7 @@ three: stories [..23456789]
 - 9) data generation process: e.g. data exploration of inbound vs outbound [x]
   - warehouse image, picked a mix pallet one [x]
 - 10) zeroth rule of Machine Learning: start with no ML (and further rules on complex heuristics)
+  - e.g. naive forecast, mean, mode, greedy method...
 - 4) talking to business stakeholders
   - interview and discovery
   - benefit of a RAD interface (e.g. streamlit)

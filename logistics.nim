@@ -53,6 +53,16 @@ template modernSupplyChains* =
 - (network) also internal network increases
 """
 
+template storageTransportation* =
+  slide:
+    columns:
+      column:
+        nbText "### Storage"
+        nbImage "images/warehouse.png" # https://en.wikipedia.org/wiki/Distribution_center
+      column:
+        nbText "### Transportation"
+        nbImage "images/container-ship.png"
+
 template e2ePlanning* =
   slide:
     nbText "### Planning"
@@ -78,14 +88,24 @@ template uncertainty* =
       column:
         nbText "#### **Safety Stock**\n\nextra stock due to uncertainty to mitigate risk of stock outs"
 
+template pymiTalkForecastingNixtla* =
+  slide:
+    nbText "### Forecasting with Nixtla"
+    nbImage "images/talk-pymi-forecasting.png"
+    reference "[github.com/pietroppeter/pymi-timeseries-forecasting-nixtla](https://github.com/pietroppeter/pymi-timeseries-forecasting-nixtla)"
+
+template forecastingSlides* =
+  pymiTalkForecastingNixtla
+
 template all* =
   sectionSlide
   whatLogistic
   modernSupplyChains
   e2ePlanning
   uncertainty
+  forecastingSlides
 
 when isMainModule:
   myInit("logistics.nim")
-  uncertainty
+  storageTransportation
   nbSave
