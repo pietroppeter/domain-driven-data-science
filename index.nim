@@ -14,12 +14,23 @@ template titleSlide* =
 # a talk about why I think domain expertise is important for Data Scientists, where it matters
 
 template agendaSlide* = 
-  slide:
-    nbText """
+  autoAnimateSlides(2):
+    showAt(1):
+      nbText """
 ## Agenda
 
 1. Why domain is important?
 2. Supply Chain and Logistics
+3. Stories and Ideas
+"""
+    showAt(2):
+      nbText """
+## Agenda
+
+1. Why domain is important?
+2. Supply Chain and Logistics
+  - Forecasting
+  - Optimization
 3. Stories and Ideas
 """
     speakerNote """
@@ -68,18 +79,16 @@ My hope in general is that more people do talks about domain expertise
 so that we can learn from multiple point of views
 """
 
-template aSlide* = 
+template thanks* = 
   slide:
-    nbText """
-## title
+    nbText """# 🙏"""
+    reference "🧑‍💻 [github.com/pietroppeter](https://github.com/pietroppeter)"
+    reference "🦋 [@pietroppeter.bsky.social](https://bsky.app/profile/pietroppeter.bsky.social)"
+    reference "🐘 [@pietroppeter@fosstodon](https://fosstodon.org/@pietroppeter)"
+    reference "👨‍💼 [LinkedIn - Pietro Peterlongo](https://www.linkedin.com/in/pietro-peterlongo-b7605627/)"
+    nbText "🔵⚪️ [agilelab.it](https://www.agilelab.it/)"
 
-"""
-    speakerNote """
-"""
-
-
-when isMainModule:
-  myInit("index.nim")
+template presentation* =
   titleSlide
   agendaSlide
   meSlide
@@ -92,4 +101,10 @@ when isMainModule:
   #slide: optimization.all
   slide:
     stories.all
+  thanks
+
+
+when isMainModule:
+  myInit("index.nim")
+  presentation
   nbSave

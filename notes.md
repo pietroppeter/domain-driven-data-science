@@ -11,20 +11,19 @@
 ## slides list
 
 max number (actual):
-- zero/intro 3 (3)
-- 1. domain 9 (3)
+- intro 3 (3)
+- 1. domain 8 (3)
 - 2. logistics 7 (5)
-  - forecasting 6 (2)
+  - forecasting 6 (5)
   - optimization 3 (0)
-- 3. stories & ideas 9 (2)
-- conclusions 3 (0)
-total 40 (15)
+- 3. stories & ideas 8 (2)
+- conclusions 2 (1)
+total 37 (19)
 
 zero/index [...3]
 - title [x]
 - agenda [x]
-  - why no numbered bullet points?
-  - revise the agenda to include forecasting and optimization
+  - revise the agenda to include forecasting and optimization [x]
 - me [x]
   - me/agilelab (maybe later split in 2?)
   - tatooine in the bakground? no, at most add a slide
@@ -85,15 +84,12 @@ twoB: optimization [0123]
 
 three: stories [..23456789]
 - 1) npi: why they don't use it? [x]
-  - explain NPI again
-  - problem
-  - interface
-- 2) again on npi: random forest vs boosted regressors
+- 2) random forest vs boosted regressors
   - acknowledge it is a bit of a provocation but
   - context is to have an AutoML tool
   - ideally boosted trees are better performance wise (but note that performance is not priority here, see previous slide)
   - but: they can forecast stuff outside of ranges (that is something you have to take into account - and you cannot just clip away, you have to redistribute "mass")
-- 9) data generation process: e.g. data exploration of inbound vs outbound [x]
+- 9) data generation process [x]
   - warehouse image, picked a mix pallet one [x]
 - 10) zeroth rule of Machine Learning: start with no ML (and further rules on complex heuristics)
   - e.g. naive forecast, mean, mode, greedy method...
@@ -107,12 +103,10 @@ three: stories [..23456789]
   - (also chatgpt for sure, but you need to be careful)
 - 8) get inspired by domain: Toyota's 4S and data processes
 - 3) pos demand sensing? a failure? or in general success of TG because we were domain experts
-- 11) connect to business value as much as possible
-- 12) link to product/project management??
 
-four [012]
+four [.12]
 - conclusions
-- ending, thanks, references (connect through socials)
+- thanks [x]
 
 ## agenda
 
