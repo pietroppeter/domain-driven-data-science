@@ -61,6 +61,7 @@ li {
 
 template myInit*(sourceFileRel = "my.nim") =
   nbInit(thisFileRel=sourceFileRel, theme=revealTheme)
+  nb.useLatex
   agileTheme()
   addNbTextSmall
   addNbImg

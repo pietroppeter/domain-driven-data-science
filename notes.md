@@ -64,19 +64,21 @@ two: logistics [.....567]
   - airlines and telco 
   - ... distributors? 
 
-twoA: forecasting [..23456]
+twoA: forecasting [....456]
+- 0) subsection slide [x]
 - 1) forecast dimensions / modelling [x]
-- 2) forecast algorithms
+- 2) forecast algorithms [x]
   - simple techniques: exponential smoothing, Holt Winters, Croston
   - techniques, stats vs ML vs neural, (nixtla), M5 competition, foundational models (hyndman book)
-- 3) important techniques in forecasting
+- 3) forecasting evaluation [x]
+- 4) important techniques in forecasting
   - hierarchical forecasting
-  -  probabilistic forecasting (conformal prediction)
-- 4) forecasting problems: seasonality, promotion, initialization
-- 5) forecasting evaluation
+  - probabilistic forecasting (conformal prediction)
+- 5) forecasting problems: seasonality, promotion, initialization
 - 6) link to my talk on forecasting! [x]
 
 twoB: optimization [0123]
+- 0) subsection slide
 - operations research optimization (e.g. order generation, VRP)
 - OR specialist as original data scientists? Pascal's course
 
