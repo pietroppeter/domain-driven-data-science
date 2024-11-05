@@ -35,12 +35,29 @@ movement and storage of materials, parts and finished inventory
 - logistics is now a cornerstone of international trade
 """
 
+template modernSupplyChains* =
+  slide:
+    columns:
+      column:
+        nbImg("images/network-maersk.svg", "300px")
+      column:
+        nbText "### Modern Supply Chains"
+        nbText """
+- extended networks of suppliers
+- demand-driven market
+- compete on both **service** and **cost**
+- turbulence and volatility
+"""
+    speakerNote """
+- (network) aka globalisation
+"""
 
 template all* =
   sectionSlide
   whatLogistic
+  modernSupplyChains
 
 when isMainModule:
   myInit("logistics.nim")
-  whatLogistic
+  modernSupplyChains
   nbSave

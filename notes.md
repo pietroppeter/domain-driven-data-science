@@ -33,11 +33,11 @@ one: domain [...3456789]
 - 9) and again on AgileLab
 - 10) data science as a domain (industry vs research, internal vs external, consulting/product, B2B vs B2C) - sort of a disclaimers
 
-two: logistics [.123456789]
+two: logistics [..23456789]
 - 1) what is logistics (def and quote) [x]
   - 4) flow of information vs flow of materials (diagram!) [x]
   - better quote [x]
-- 2) modern Supply Chains
+- 2) modern Supply Chains [x]
   - 5) importance of L&SC in a changing world (competitive advantage on service and cost)
 - 3) example of companies
 - 6) concept: safety stock
@@ -143,6 +143,7 @@ four: ending, thanks, references (connect through socials)
 - slides on logistics and supply chain https://management.web.uniroma1.it/sites/default/files/Dalla%20logistica%20integrata%20al%20supply%20chain%20management.pdf
 - quote Art of War https://suntzusaid.com/book/7
 - logistics as a homonym https://en.wikipedia.org/wiki/Logistics#Origin
+- maersk supply chain https://www.maersk.com/logistics-explained/supply-chain-management/2024/02/02/supply-chain-explained
 
 ## random notes
 
