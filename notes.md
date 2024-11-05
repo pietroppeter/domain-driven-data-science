@@ -33,7 +33,7 @@ one: domain [...3456789]
 - 9) and again on AgileLab
 - 10) data science as a domain (industry vs research, internal vs external, consulting/product, B2B vs B2C) - sort of a disclaimers
 
-two: logistics [......6789]
+two: logistics [.......789]
 - 1) what is logistics (def and quote) [x]
   - flow of information vs flow of materials (diagram!) [x]
   - better quote [x]
@@ -46,11 +46,15 @@ two: logistics [......6789]
 - 5) constraints
   - many
 - 6) tech: time series forecasting
-  - forecast dimensions / modelling
-  - techniques, stats vs ML vs neural, (nixtla), M5 competition, foundational models (hyndman book)
-  - forecasting: modelling, algorithms, evaluation
-  - hierarchical forecasting and probabilistic forecasting (conformal prediction)
+  - forecast dimensions / modelling [x]
+  - forecast algorithms
+    - simple techniques: exponential smoothing, Holt Winters, Croston
+    - techniques, stats vs ML vs neural, (nixtla), M5 competition, foundational models (hyndman book)
+  - important techniques in forecasting
+    - hierarchical forecasting
+    -  probabilistic forecasting (conformal prediction)
   - forecasting problems: seasonality, promotion, initialization
+  - forecasting evaluation
   - link to my talk on forecasting! [x]
 - 7) tech: research optimization (e.g. replenishment, VRP)
   - OR specialist as original data scientists? Pascal's course
