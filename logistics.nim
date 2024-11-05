@@ -50,14 +50,30 @@ template modernSupplyChains* =
 """
     speakerNote """
 - (network) aka globalisation
+- (network) also internal network increases
 """
+
+template e2ePlanning* =
+  slide:
+    nbText "### Planning"
+    columns:
+      column:
+        nbText "**Demand**"
+        nbImg("images/demand.png", "300px") # does not respond to width
+      column:
+        nbText "**Service**"
+        nbImg("images/service.png", "300px")
+      column:
+        nbText "**Stock**"
+        nbImg("images/stock.png", "300px")
 
 template all* =
   sectionSlide
   whatLogistic
   modernSupplyChains
+  e2ePlanning
 
 when isMainModule:
   myInit("logistics.nim")
-  modernSupplyChains
+  e2ePlanning
   nbSave

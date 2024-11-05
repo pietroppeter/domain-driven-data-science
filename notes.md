@@ -33,23 +33,28 @@ one: domain [...3456789]
 - 9) and again on AgileLab
 - 10) data science as a domain (industry vs research, internal vs external, consulting/product, B2B vs B2C) - sort of a disclaimers
 
-two: logistics [..23456789]
+two: logistics [...3456789]
 - 1) what is logistics (def and quote) [x]
   - 4) flow of information vs flow of materials (diagram!) [x]
   - better quote [x]
 - 2) modern Supply Chains [x]
   - 5) importance of L&SC in a changing world (competitive advantage on service and cost)
-- 3) example of companies
-- 6) concept: safety stock
+- 8) e2e planning: demand, fulfillment, replenishment [x]
+  - 11) other concepts: lost sales (due to out of stock) vs overstock
 - 7) concept: lead time
-- 11) other concepts: lost sales vs out of stock
-- 8) 3 pillars of e2e planning: demand, fulfillment, replenishment
+  - 6) concept: safety stock
 - 9) tech: time series forecasting
   - techniques, stats vs ML vs neural, (nixtla), M5 competition, (hyndman book)
   - forecasting: modelling, algorithms, evaluation
   - hierarchical forecasting
 - 10) tech: research optimization (e.g. replenishment, VRP)
   - OR specialist as original data scientists? Pascal's course
+- 3) example of companies and specific issues
+  - spare parts, very erratic demand
+  - dairy products (yogurts), highly promoted demand
+  - fashion/(consumer goods?), short product life cycles
+  - airlines and telco 
+  - ... distributors? 
 
 three: stories [..23456789]
 - 1) npi: why they don't use it? [x]
@@ -61,9 +66,9 @@ three: stories [..23456789]
   - context is to have an AutoML tool
   - ideally boosted trees are better performance wise (but note that performance is not priority here, see previous slide)
   - but: they can forecast stuff outside of ranges (that is something you have to take into account - and you cannot just clip away, you have to redistribute "mass")
-- 3) pos demand sensing? a failure? or in general success of TG because we were domain experts
-- 11) connect to business value as much as possible
-- 12) link to product/project management??
+- 9) data generation process: e.g. data exploration of inbound vs outbound [x]
+  - warehouse image, picked a mix pallet one [x]
+- 10) zeroth rule of Machine Learning: start with no ML (and further rules on complex heuristics)
 - 4) talking to business stakeholders
   - interview and discovery
   - benefit of a RAD interface (e.g. streamlit)
@@ -72,9 +77,9 @@ three: stories [..23456789]
 - 7) how to learn: internet (youtube), follow business people, specialist books
   - (also chatgpt for sure, but you need to be careful)
 - 8) get inspired by domain: Toyota's 4S and data processes
-- 9) data generation process: e.g. data exploration of inbound vs outbound [x]
-  - warehouse image, picked a mix pallet one [x]
-- 10) zeroth rule of Machine Learning: start with no ML (and further rules on complex heuristics)
+- 3) pos demand sensing? a failure? or in general success of TG because we were domain experts
+- 11) connect to business value as much as possible
+- 12) link to product/project management??
 
 four: ending, thanks, references (connect through socials)
 
