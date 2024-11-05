@@ -37,7 +37,7 @@ two: logistics [.123456789]
 - 1) what is logistics (def and quote) [x]
   - 4) flow of information vs flow of materials (diagram!) [x]
   - better quote [x]
-- 2) what is Supply Chain (mgmt, new term)
+- 2) modern Supply Chains
   - 5) importance of L&SC in a changing world (competitive advantage on service and cost)
 - 3) example of companies
 - 6) concept: safety stock
@@ -57,6 +57,10 @@ three: stories [..23456789]
   - problem
   - interface
 - 2) again on npi: random forest vs boosted regressors
+  - acknowledge it is a bit of a provocation but
+  - context is to have an AutoML tool
+  - ideally boosted trees are better performance wise (but note that performance is not priority here, see previous slide)
+  - but: they can forecast stuff outside of ranges (that is something you have to take into account - and you cannot just clip away, you have to redistribute "mass")
 - 3) pos demand sensing? a failure? or in general success of TG because we were domain experts
 - 11) connect to business value as much as possible
 - 12) link to product/project management??

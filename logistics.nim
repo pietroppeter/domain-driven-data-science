@@ -11,7 +11,7 @@ template aSlide* =
 """
 
 template sectionSlide* =
-  slide nbText "# 2. Logistics & Supply Chain"
+  slide nbText "# 2. Logistics & Supply Chain 🚚"
 
 template whatLogistic* =
   slide:
