@@ -1,15 +1,6 @@
 import nimib, nimislides
 import my
 
-template aSlide* = 
-  slide:
-    nbText """
-## title
-
-"""
-    speakerNote """
-"""
-
 template sectionSlide* =
   slide nbText "# 2. Logistics & Supply Chain 🚚"
 
@@ -88,41 +79,15 @@ template uncertainty* =
       column:
         nbText "#### **Safety Stock**\n\nextra stock due to uncertainty to mitigate risk of stock outs"
 
-template pymiTalkForecastingNixtla* =
-  slide:
-    nbText "### Forecasting with Nixtla"
-    nbImage "images/talk-pymi-forecasting.png"
-    reference "[github.com/pietroppeter/pymi-timeseries-forecasting-nixtla](https://github.com/pietroppeter/pymi-timeseries-forecasting-nixtla)"
-
-template forecastModelling* =
-  slide:
-    nbText "### Forecast: Modelling"
-    columns:
-      column:
-        nbText "**Dimensions**"
-        nbImage "images/forecast-dimensions.png"
-      column:
-        nbText """
-- Product (SKUs, Categories, Brands) 10-1M
-- Market (Warehouses, Regions, Channels) 5-1K
-- Time (day, week, month) (12-52-365)*(1-3)
-
-Dataset size: 100-100B
-"""
-
-template forecastingSlides* =
-  forecastModelling
-  pymiTalkForecastingNixtla
-
 template all* =
   sectionSlide
   whatLogistic
+  storageTransportation
   modernSupplyChains
   e2ePlanning
   uncertainty
-  forecastingSlides
 
 when isMainModule:
   myInit("logistics.nim")
-  forecastModelling
+  all
   nbSave

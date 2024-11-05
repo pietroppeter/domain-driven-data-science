@@ -10,10 +10,21 @@
 
 ## slides list
 
-zero/index
+max number (actual):
+- zero/intro 3 (3)
+- 1. domain 9 (3)
+- 2. logistics 7 (5)
+  - forecasting 6 (2)
+  - optimization 3 (0)
+- 3. stories & ideas 9 (2)
+- conclusions 3 (0)
+total 40 (15)
+
+zero/index [...3]
 - title [x]
 - agenda [x]
   - why no numbered bullet points?
+  - revise the agenda to include forecasting and optimization
 - me [x]
   - me/agilelab (maybe later split in 2?)
   - tatooine in the bakground? no, at most add a slide
@@ -33,38 +44,42 @@ one: domain [...3456789]
 - 9) and again on AgileLab
 - 10) data science as a domain (industry vs research, internal vs external, consulting/product, B2B vs B2C) - sort of a disclaimers
 
-two: logistics [.......789]
+two: logistics [.....567]
 - 1) what is logistics (def and quote) [x]
   - flow of information vs flow of materials (diagram!) [x]
   - better quote [x]
-- 1.5) storage and transportation [x]
-- 2) modern Supply Chains [x]
+- 2) storage and transportation [x]
+- 3) modern Supply Chains [x]
   - importance of L&SC in a changing world (competitive advantage on service and cost)?
-- 3) Planning: demand, service, stock [x]
+- 4) Planning: demand, service, stock [x]
   - other concepts: lost sales (due to out of stock) vs overstock?
-- 4) uncertainty (lead time and safety stock) [x]
-- 5) constraints
+- 5) uncertainty (lead time and safety stock) [x]
+- 6) constraints
   - many
-- 6) tech: time series forecasting
-  - forecast dimensions / modelling [x]
-  - forecast algorithms
-    - simple techniques: exponential smoothing, Holt Winters, Croston
-    - techniques, stats vs ML vs neural, (nixtla), M5 competition, foundational models (hyndman book)
-  - important techniques in forecasting
-    - hierarchical forecasting
-    -  probabilistic forecasting (conformal prediction)
-  - forecasting problems: seasonality, promotion, initialization
-  - forecasting evaluation
-  - link to my talk on forecasting! [x]
-- 7) tech: research optimization (e.g. replenishment, VRP)
-  - OR specialist as original data scientists? Pascal's course
-- 8) complexity slide?
+- 7) complexity slide?
   - example of companies and specific issuesx
   - spare parts, very erratic demand
   - dairy products (yogurts), highly promoted demand
   - fashion/(consumer goods?), short product life cycles
   - airlines and telco 
   - ... distributors? 
+
+twoA: forecasting [..23456]
+- 1) forecast dimensions / modelling [x]
+- 2) forecast algorithms
+  - simple techniques: exponential smoothing, Holt Winters, Croston
+  - techniques, stats vs ML vs neural, (nixtla), M5 competition, foundational models (hyndman book)
+- 3) important techniques in forecasting
+  - hierarchical forecasting
+  -  probabilistic forecasting (conformal prediction)
+- 4) forecasting problems: seasonality, promotion, initialization
+- 5) forecasting evaluation
+- 6) link to my talk on forecasting! [x]
+
+twoB: optimization [0123]
+- operations research optimization (e.g. order generation, VRP)
+- OR specialist as original data scientists? Pascal's course
+
 
 three: stories [..23456789]
 - 1) npi: why they don't use it? [x]
@@ -80,6 +95,7 @@ three: stories [..23456789]
   - warehouse image, picked a mix pallet one [x]
 - 10) zeroth rule of Machine Learning: start with no ML (and further rules on complex heuristics)
   - e.g. naive forecast, mean, mode, greedy method...
+  - also 3rd rule?
 - 4) talking to business stakeholders
   - interview and discovery
   - benefit of a RAD interface (e.g. streamlit)
@@ -92,7 +108,9 @@ three: stories [..23456789]
 - 11) connect to business value as much as possible
 - 12) link to product/project management??
 
-four: ending, thanks, references (connect through socials)
+four [012]
+- conclusions
+- ending, thanks, references (connect through socials)
 
 ## agenda
 

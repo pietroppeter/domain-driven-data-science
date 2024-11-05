@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/theme/black.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/highlight/monokai.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    
+:root {
+  --r-background-color: #FFF;
+  --r-heading-color: #0e1f53;
+  --r-link-color: #02A4BD;
+  --r-selection-color: #02A4BD;
+  --r-link-color-dark: darken(#02A4BD , 15%);
+  --r-main-color: #0e1f53;
+}
+
+.reveal ul, .reveal ol {
+  display: block;
+  text-align: left;
+}
+
+li {
+  padding-left: 12px;
+}
+
+    </style>
+  </head>
+  <body>
+  <div class="reveal">
+    <div class="slides">
+      <style>
+.reveal strong {
+  color: #02A4BD;
+  font-style: normal;
+}
+
+</style>
+      <section data-nimib-slide-number="1" >
+      <h3>Forecast: Modelling</h3>
+      <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
+  
+      <div>
+      <p><strong>Dimensions</strong></p>
+      <figure>
+<img src="images/forecast-dimensions.png" alt="">
+<figcaption></figcaption>
+</figure>
+      </div>
+      <div>
+      <ul>
+<li>Product (SKUs, Categories, Brands) 10-1M</li>
+<li>Market (Warehouses, Regions, Channels) 5-1K</li>
+<li>Time (day, week, month) (12-52-365)*(1-3)</li>
+</ul>
+<p>Dataset size: 100-100B</p>
+      </div>
+      </div>
+      </section>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/highlight/highlight.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/notes/notes.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    Reveal.initialize({
+      plugins: [ 
+        RevealHighlight,
+        RevealNotes,
+      ],
+    });
+  </script>
+  <div id="agileLabLogo" style="background: url(./images/logo-agilelab.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  width: 250px;
+  height: 70px;"></div>
+  </body>
+</html>

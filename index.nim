@@ -1,6 +1,6 @@
 import nimib, nimislides
 import my
-import domain, logistics, stories
+import domain, logistics, forecast, stories#, optimization
 
 
 template titleSlide* =
@@ -87,6 +87,9 @@ when isMainModule:
     domain.all
   slide:
     logistics.all
+  slide:
+    forecast.all
+  #slide: optimization.all
   slide:
     stories.all
   nbSave
