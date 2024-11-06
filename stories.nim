@@ -64,13 +64,73 @@ Story: a model for forecast of New Product sales
 - (interpretability) e.g. SHAP values
 """
 
+template rulesML* =
+  slide:
+    nbText "### Rules of ML"
+    columns:
+      column:
+        nbImage "images/first-rule-ml.png"
+        reference "[Eugene Yan on 1st rule](https://eugeneyan.com/writing/first-rule-of-ml/)"
+      column:
+        nbText """
+2. First, design and implement metrics
+3. Choose machine learning over a complex heuristic.
+""""
+        reference "[Google's rules of ML](https://developers.google.com/machine-learning/guides/rules-of-ml)"
+    speakerNote """
+1. Don’t be afraid to launch a product without machine learning
+- go with a naive forecast or a greedy method, mean, mode
+"""    
+
+template randomForestVSXgboost* =
+  slide:
+    nbText """### Random forest vs Xgboost
+
+todo
+"""
+    nbText "My context: AutoML for Forecast Initialization"
+    speakerNote """
+- acknowledge it is a bit of a provocation but
+- context is to have an AutoML tool
+- ideally boosted trees are better performance wise (but note that performance is not priority here, see previous slide)
+- but: they can forecast stuff outside of ranges (that is something you have to take into account - and you cannot just clip away, you have to redistribute "mass")
+- general idea is: resist the hype, sometimes there are reasons
+"""
+
+template talkToExperts* =
+  slide:
+    nbText "### Talk to experts"
+    columns:
+      column:
+        nbText "**Interview**"
+      column:
+        nbText "**Interface**"
+
+template documentDomainEtAl* =
+  slide:
+    nbText "### Business, Domain, Data essential"
+
+template learnTheDomain* =
+  slide:
+    nbText "### Learn the Domain"
+    # as a data scientist
+
+template inspiredByDomain* =
+  slide:
+    nbText "### Get inspired by Domain"
 
 template all* =
   sectionSlide
-  dataGeneratingProcess
   npiTrust
+  dataGeneratingProcess
+  rulesML
+  talkToStakeholder # todo
+  documentDomainEtAl # todo
+  randomForestVSXgboost # todo
+  learnTheDomain # todo
+  inspiredByDomain # todo
 
 when isMainModule:
   myInit("stories.nim")
-  dataGeneratingProcess
+  randomForestVSXgboost
   nbSave

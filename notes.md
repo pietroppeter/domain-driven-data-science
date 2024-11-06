@@ -82,27 +82,20 @@ twoB: optimization [0123]
 - OR specialist as original data scientists? Pascal's course
 
 
-three: stories [..23456789]
+three: stories [...3456789]
 - 1) npi: why they don't use it? [x]
-- 2) random forest vs boosted regressors
-  - acknowledge it is a bit of a provocation but
-  - context is to have an AutoML tool
-  - ideally boosted trees are better performance wise (but note that performance is not priority here, see previous slide)
-  - but: they can forecast stuff outside of ranges (that is something you have to take into account - and you cannot just clip away, you have to redistribute "mass")
-- 9) data generation process [x]
+- 2) data generation process [x]
   - warehouse image, picked a mix pallet one [x]
-- 10) zeroth rule of Machine Learning: start with no ML (and further rules on complex heuristics)
-  - e.g. naive forecast, mean, mode, greedy method...
-  - also 3rd rule?
+- 3) 1st rule of Machine Learning: start with no ML (and further rules on complex heuristics) [x]
 - 4) talking to business stakeholders
   - interview and discovery
   - benefit of a RAD interface (e.g. streamlit)
 - 5) document business and domain essentials
-- 6) ubiquitous language, use the appropriate language
+- 6) random forest vs boosted regressors
 - 7) how to learn: internet (youtube), follow business people, specialist books
   - (also chatgpt for sure, but you need to be careful)
 - 8) get inspired by domain: Toyota's 4S and data processes
-- 3) pos demand sensing? a failure? or in general success of TG because we were domain experts
+- (X) ubiquitous language, use the appropriate language. NO doing at beginning with Domain Driven Design
 
 four [.12]
 - conclusions

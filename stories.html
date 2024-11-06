@@ -38,58 +38,15 @@ li {
 }
 
 </style>
-      <section data-nimib-slide-number="1" data-auto-animate >
-      <h3>🏗️ Data Generating Process</h3>
-<p>Story: Data Exploration of Warehouse data</p>
-      <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
-  
-      <div>
-      <figure>
-<img src="images/pallet-inbound.png" alt="" width="300px">
-<figcaption></figcaption>
-</figure>
-      </div>
-      <div>
-      <ul>
-<li>order data: many more rows for outbound than inbound orders, why?</li>
-<li>pick task data: missing a day in a specific week, why?</li>
-<li>...</li>
-</ul>
-      </div>
-      </div>
+      <section data-nimib-slide-number="1" >
+      <h3>Random forest vs Xgboost</h3>
+<p>todo</p>
       <aside class="notes">
   <ul>
-<li>why more outbound than inbound? outbound is much more complex (suppliers send truck with more )</li>
-<li>why missing pick task data? internet was down for a day for an IT issue</li>
-<li>...</li>
-</ul>
-
-</aside>
-      </section>
-      <section data-nimib-slide-number="2" data-auto-animate >
-      <h3>🏗️ Data Generating Process</h3>
-<p>Story: Data Exploration of Warehouse data</p>
-      <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
-  
-      <div>
-      <figure>
-<img src="images/pallet-outbound.png" alt="" width="300px">
-<figcaption></figcaption>
-</figure>
-      </div>
-      <div>
-      <ul>
-<li>order data: many more rows for outbound than inbound orders, why?</li>
-<li>pick task data: missing a day in a specific week, why?</li>
-<li>...</li>
-</ul>
-      </div>
-      </div>
-      <aside class="notes">
-  <ul>
-<li>why more outbound than inbound? outbound is much more complex (suppliers send truck with more )</li>
-<li>why missing pick task data? internet was down for a day for an IT issue</li>
-<li>...</li>
+<li>acknowledge it is a bit of a provocation but</li>
+<li>context is to have an AutoML tool</li>
+<li>ideally boosted trees are better performance wise (but note that performance is not priority here, see previous slide)</li>
+<li>but: they can forecast stuff outside of ranges (that is something you have to take into account - and you cannot just clip away, you have to redistribute &quot;mass&quot;)</li>
 </ul>
 
 </aside>
@@ -99,11 +56,13 @@ li {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/highlight/highlight.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/notes/notes.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/math/math.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
     Reveal.initialize({
       plugins: [ 
         RevealHighlight,
         RevealNotes,
+        RevealMath.KaTeX,
       ],
     });
   </script>
