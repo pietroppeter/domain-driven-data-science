@@ -30,11 +30,10 @@ template agendaSlide* =
 1. Why domain is important?
 2. Supply Chain and Logistics
   - Forecasting
-  - Optimization
 3. Stories and Ideas
 """
     speakerNote """
-- (1) problem and opprotunity
+- (1) problem and opportunity
 - (2) the domain I know best
 - (3) give hints
 - mention appendix on DDD/Data Mesh? or it is part one
@@ -60,7 +59,7 @@ template meSlide* =
 - 🏭🧑‍💻 DS@ToolsGroup [toolsgroup.com](toolsgroup.com)
 - 🐙🗽 Recurse Center [recurse.com](recurse.com) 
 - 💙🧡 PyData Milan [milano.python.it](milano.python.it)
-- 🏄🧑‍💻 DS@AgileLab [agilelab.it](agilelab.it)
+- 🏄🧑‍💻 DS@AgileLab [handbook.agilelab.it](handbook.agilelab.it)
 """
     speakerNote """
 - Hi I am Pietro and these are my emojis...
@@ -77,6 +76,17 @@ Motivation for this part is:
 
 My hope in general is that more people do talks about domain expertise
 so that we can learn from multiple point of views
+"""
+
+template conclusions* =
+  slide:
+    nbText """
+### Conclusions
+
+- **Domain**: a worthy and relatively untapped
+opportunity for Data Scientist
+- More complexity than you might expect
+- Inspired to learn and talk about your domain?
 """
 
 template thanks* = 
@@ -101,6 +111,7 @@ template presentation* =
   #slide: optimization.all
   slide:
     stories.all
+  conclusions
   thanks
 
 

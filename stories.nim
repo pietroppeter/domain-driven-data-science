@@ -83,12 +83,16 @@ template rulesML* =
 """    
 
 template randomForestVSXgboost* =
-  slide:
-    nbText """### Random forest vs Xgboost
-
-todo
-"""
-    nbText "My context: AutoML for Forecast Initialization"
+  autoAnimateSlides(5):
+    nbText """### Random forest vs Xgboost"""
+    showFrom(1):
+      nbText "Context: AutoML for Forecast Initialization"
+    showFrom(2):
+      nbText "- boosted trees may predict outside training range"
+    showFrom(3):
+      nbText "- boosted trees more difficult to calibrate than RF"
+    showFrom(4):
+      nbText """- learned: 1) resist the hype; 2) watch your results."""
     speakerNote """
 - acknowledge it is a bit of a provocation but
 - context is to have an AutoML tool
@@ -103,32 +107,91 @@ template talkToExperts* =
     columns:
       column:
         nbText "**Interview**"
+        nbText """
+Try to uncover **opportunties** and **risks**
+for a data-driven tool you might want to build.
+"""
+      column nbText "⠀" # I do not like I have to do that
       column:
         nbText "**Interface**"
+        nbText """
+It helps to iterate with an **interactive**
+tool that shows data and visualization.
+"""
+    speakerNote """
+- interview story: added goal to help them challenge customer orders?
+- interface story: streamlit can be refreshing for someone who has seen only BI. The finance story.
+"""
 
-template documentDomainEtAl* =
+template documentDomain* =
   slide:
-    nbText "### Business, Domain, Data essential"
+    nbText "### Document the domain"
+    nbText """
+e.g. _Business, Domain and Data essentials_ in README
+
+```md
+- Customer X is investing strategically in 3rd party logistics
+- The cost of the operation is not what is expected
+- Main cost component in a Warehouse is picking (time)
+- Using a ABC class based positioning of items could help
+- Data comes from a WMS
+- We have 2 years of data, 1 year of clean data
+```
+"""
 
 template learnTheDomain* =
-  slide:
+  autoAnimateSlides(4):
     nbText "### Learn the Domain"
-    # as a data scientist
+    columns:
+      column:
+        nbText "**Socials**"
+        showFrom(2):
+          nbImage "images/vandeput.png"
+      column:
+        nbText "**Experts**"
+        showFrom(3):
+          nbImage "images/ubicazione.png"
+      column:
+        nbText "**Books**"
+        showFrom(4):
+          nbImage "images/scl-book.png"
+  speakerNote """
+- optical networks story
+- chatGpt, the good and the bad
+"""
+
 
 template inspiredByDomain* =
   slide:
-    nbText "### Get inspired by Domain"
+    nbText """### Get inspired by Domain
+
+**5S methodology**
+
+1. 整理 (_seiri_) Sort
+2. 整頓 (_seiton_) Straighten
+3. 清掃 (_seiso_) Shine
+4. 清潔 (_seiketsu_) Standardize
+5. しつけ (_shitsuke_) Sustain
+
+"""
+    speakerNote """
+1. data cleaning
+2. create a DAG
+3. Clean Code
+4. CI
+5. ?
+"""
 
 template all* =
   sectionSlide
   npiTrust
   dataGeneratingProcess
   rulesML
-  talkToStakeholder # todo
-  documentDomainEtAl # todo
-  randomForestVSXgboost # todo
-  learnTheDomain # todo
-  inspiredByDomain # todo
+  talkToExperts
+  documentDomain
+  randomForestVSXgboost
+  learnTheDomain
+  inspiredByDomain
 
 when isMainModule:
   myInit("stories.nim")

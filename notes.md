@@ -10,15 +10,16 @@
 
 ## slides list
 
-max number (actual):
-- intro 3 (3)
-- 1. domain 8 (3)
-- 2. logistics 7 (5)
-  - forecasting 6 (5)
-  - optimization 3 (0)
-- 3. stories & ideas 8 (2)
-- conclusions 2 (1)
-total 37 (19)
+`section: target (missing)`
+
+- intro 3 (0) [x]
+- 1. domain 5 (2)
+- 2. logistics 7 (2)
+  - forecasting 6 (1)
+- 3. stories & ideas 8 (0) [x]
+- conclusions 2 (0) [x]
+
+total 31 (8)
 
 zero/index [...3]
 - title [x]
@@ -28,25 +29,25 @@ zero/index [...3]
   - me/agilelab (maybe later split in 2?)
   - tatooine in the bakground? no, at most add a slide
 
-one: domain [...3456789]
-- 1) examples (list of domains)
-- 2) definition?
-- 3) venn diagram (and its history) [x]
+one: domain [...345]
+- 1) venn diagram (and its history) [x]
   - parentheses on Data (Viz/Analysis, Engineering), general Data skills? yes, two things missing DE and DA
-- 4) start problematizing: how much content we produce on these two? memes! [x]
-- 5) more problems: failure of DS/ML/AI project [x]
+- 2) start problematizing: how much content we produce on these two? memes! [x]
+- 3) more problems: failure of DS/ML/AI project [x]
   - examples? hint that I will tell stories later
   - (at some point a note on terminology? introduce the DS/ML/AI thing?)
-- 6) claims and introduce the rest of the talk
-- 7) parentheses on Domain Driven Design
-- 8) and on Data Mesh
-- 9) and again on AgileLab
-- 10) data science as a domain (industry vs research, internal vs external, consulting/product, B2B vs B2C) - sort of a disclaimers
+- 4) parentheses on Domain Driven Design
+- 5) and on Data Mesh
+  - more on AgileLab
+
+skipped:
+- examples (list of domains)
+- definition?
+- claims and introduce the rest of the talk
+- [x] data science as a domain (industry vs research, internal vs external, consulting/product, B2B vs B2C) - sort of a disclaimers (NO, discuss this in the Me slide)
 
 two: logistics [.....567]
 - 1) what is logistics (def and quote) [x]
-  - flow of information vs flow of materials (diagram!) [x]
-  - better quote [x]
 - 2) storage and transportation [x]
 - 3) modern Supply Chains [x]
   - importance of L&SC in a changing world (competitive advantage on service and cost)?
@@ -76,29 +77,23 @@ twoA: forecasting [.....56]
 - 5) forecasting problems: seasonality, promotion, initialization [x]
 - 6) link to my talk on forecasting! [x]
 
-twoB: optimization [0123]
-- 0) subsection slide
+twoB: optimization [X] NO, SKIP!
 - operations research optimization (e.g. order generation, VRP)
 - OR specialist as original data scientists? Pascal's course
 
 
-three: stories [...3456789]
+three: stories [........8]
 - 1) npi: why they don't use it? [x]
 - 2) data generation process [x]
-  - warehouse image, picked a mix pallet one [x]
 - 3) 1st rule of Machine Learning: start with no ML (and further rules on complex heuristics) [x]
-- 4) talking to business stakeholders
-  - interview and discovery
-  - benefit of a RAD interface (e.g. streamlit)
-- 5) document business and domain essentials
-- 6) random forest vs boosted regressors
-- 7) how to learn: internet (youtube), follow business people, specialist books
-  - (also chatgpt for sure, but you need to be careful)
-- 8) get inspired by domain: Toyota's 4S and data processes
-- (X) ubiquitous language, use the appropriate language. NO doing at beginning with Domain Driven Design
+- 4) talking to business stakeholders [x]
+- 5) document business and domain essentials [x]
+- 6) random forest vs boosted regressors [x]
+- 7) how to learn: internet (youtube), follow business people, specialist books [x]
+- 8) get inspired by domain: Toyota's 4S and data processes [x]
 
-four [.12]
-- conclusions
+four [..2]
+- conclusions [x]
 - thanks [x]
 
 ## agenda
