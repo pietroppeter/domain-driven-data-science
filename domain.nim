@@ -57,13 +57,45 @@ template memeContent* =
           nbRawHtml """<iframe src="https://giphy.com/embed/GTcGizhnF7wo2F74qP" width="480" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/GTcGizhnF7wo2F74qP">via GIPHY</a></p>"""
         # john travolta
 
+template domainDrivenDesign* =
+  slide:
+    nbText "## Domain Driven Design"
+    columns:
+      column:
+        nbImage "images/ddd.png"
+      column:
+        nbText "⠀"
+        nbText """
+- methodology from SWE
+- **ubiquitous language**
+- domain is important for devs
+"""
+
+template dataMesh* =
+  autoAnimateSlides(2):
+    nbText "## Data Mesh"
+    columns:
+      column:
+        nbImage "images/data-mesh.png"
+      column:
+        nbText "⠀"
+        nbText """
+- DDD for Big Data
+- **Data Product**
+- follow [Paolo Platter](https://www.linkedin.com/in/paoloplatter/)
+"""
+    showFrom(2):
+      nbText "Product by AgileLab: _witboost_"
+
 template all* =
   sectionSlide
   vennDiagram
   memeContent
   failureProjects
+  domainDrivenDesign
+  dataMesh
 
 when isMainModule:
   myInit("domain.nim")
-  memeContent
+  dataMesh
   nbSave

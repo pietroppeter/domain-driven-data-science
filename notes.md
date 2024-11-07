@@ -1,19 +1,17 @@
-## Mon
+## cleanup
 
-- venn diagram slide [x]
-  - the original or another one? another one (after reading Ullman's critique) [x]
-  - ok make my own! code - math - domain. Done https://app.creately.com/d/VhWArkeN52M/edit
-    - not happy about the colors. Frustrated about not being to change it. Get over it and suck it up! [x]
-- add nbImg template to be able to specify width [x]
-- post on RC zulip about it [x]
-- improve venn diagram with excalidraw [x]
+1. orange highlight color!!!
+  - check witboost slide
+2. slides look decent
+3. add relevant animations
+  - me
 
 ## slides list
 
 `section: target (missing)`
 
 - intro 3 (0) [x]
-- 1. domain 5 (2)
+- 1. domain 5 (0) [x]
 - 2. logistics 7 (1)
   - forecasting 6 (1)
 - 3. stories & ideas 8 (0) [x]
@@ -36,8 +34,8 @@ one: domain [...345]
 - 3) more problems: failure of DS/ML/AI project [x]
   - examples? hint that I will tell stories later
   - (at some point a note on terminology? introduce the DS/ML/AI thing?)
-- 4) parentheses on Domain Driven Design
-- 5) and on Data Mesh
+- 4) parentheses on Domain Driven Design [x]
+- 5) and on Data Mesh [x]
   - more on AgileLab
 
 skipped:
@@ -95,6 +93,18 @@ three: stories [........8]
 four [..2]
 - conclusions [x]
 - thanks [x]
+
+### Mon
+
+- venn diagram slide [x]
+  - the original or another one? another one (after reading Ullman's critique) [x]
+  - ok make my own! code - math - domain. Done https://app.creately.com/d/VhWArkeN52M/edit
+    - not happy about the colors. Frustrated about not being to change it. Get over it and suck it up! [x]
+- add nbImg template to be able to specify width [x]
+- post on RC zulip about it [x]
+- improve venn diagram with excalidraw [x]
+
+...
 
 ## agenda
 
