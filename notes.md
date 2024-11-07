@@ -14,7 +14,7 @@
 
 - intro 3 (0) [x]
 - 1. domain 5 (2)
-- 2. logistics 7 (2)
+- 2. logistics 7 (1)
   - forecasting 6 (1)
 - 3. stories & ideas 8 (0) [x]
 - conclusions 2 (0) [x]
@@ -54,7 +54,7 @@ two: logistics [.....567]
 - 4) Planning: demand, service, stock [x]
   - other concepts: lost sales (due to out of stock) vs overstock?
 - 5) uncertainty (lead time and safety stock) [x]
-- 6) constraints
+- 6) constraints [x]
   - many
 - 7) complexity slide?
   - example of companies and specific issuesx

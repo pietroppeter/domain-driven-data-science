@@ -82,6 +82,18 @@ template uncertainty* =
 - linked to demand variability
 """
 
+template constraints* =
+  autoAnimateSlides(2):
+    nbText """
+### Constraints
+
+- **capacity** constraints: production, budget, storage, time
+- **integral** constraint: minimum lot, incremental lot, unit of measures
+- **feasibility** constraints: schedules, opening hours
+"""
+    showFrom(2):
+      nbText "Optimization techniques (Operations Research)"
+
 template all* =
   sectionSlide
   whatLogistic
@@ -89,8 +101,9 @@ template all* =
   modernSupplyChains
   e2ePlanning
   uncertainty
+  constraints
 
 when isMainModule:
   myInit("logistics.nim")
-  all
+  constraints
   nbSave
