@@ -101,9 +101,9 @@ template constraints* =
     nbText "### Constraints"
     showFrom(2):
       nbText """
-- **capacity** constraints: production, budget, storage, time
-- **integral** constraint: minimum lot, incremental lot, unit of measures
-- **feasibility** constraints: schedules, opening hours
+- **capacity**: production, budget, storage, time
+- **integral**: minimum lot, incremental lot, unit of measures
+- **feasibility**: schedules, opening hours
 """
     showFrom(3):
       nbText "Optimization techniques (*Operations Research*)"

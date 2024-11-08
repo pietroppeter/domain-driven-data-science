@@ -107,5 +107,5 @@ template all* =
 
 when isMainModule:
   myInit("domain.nim")
-  dataMesh
+  all
   nbSave

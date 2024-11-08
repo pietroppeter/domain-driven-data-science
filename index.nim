@@ -104,6 +104,18 @@ template thanks* =
     nbText "👨‍💼 [LinkedIn - Pietro Peterlongo](https://www.linkedin.com/in/pietro-peterlongo-b7605627/)"
     nbText "🔵⚪️ [agilelab.it](https://www.agilelab.it/)"
 
+template pyconit* =
+  slide(slideOptions(imageBackground="images/pyconit.png")):
+    nbText """<p style="font-size: 60px; font-weight: 700; color: white;">🍝Come to PyCon Italy!🤌</style>"""
+    nbText """<p style="font-size: 40px; font-weight: 700; color: white;">May 28-31, Bologna | pycon.it</style>"""
+    nbText "⠀"
+    nbText "⠀"
+    nbText "⠀"
+    nbText "⠀"
+    nbText "⠀"
+    nbText "⠀"
+    nbText "⠀"
+
 template presentation* =
   titleSlide
   agendaSlide
@@ -119,6 +131,7 @@ template presentation* =
     stories.all
   conclusions
   thanks
+  pyconit
 
 
 when isMainModule:
