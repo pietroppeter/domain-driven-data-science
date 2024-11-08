@@ -11,7 +11,7 @@ template aSlide* =
 """
 
 template sectionSlide* =
-  slide nbText "# 3. Stories & Ideas 💡"
+  slide nbText "# 3. Stories 💡"
 
 template dataGeneratingProcess* = 
   autoAnimateSlides(2):
