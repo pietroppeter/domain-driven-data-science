@@ -27,16 +27,17 @@ movement and storage of materials, parts and finished inventory
 """
 
 template modernSupplyChains* =
-  slide:
+  autoAnimateSlides(2):
     columns:
       column:
         nbImg("images/network-maersk.svg", "300px")
       column:
         nbText "### Modern Supply Chains"
-        nbText """
+        showFrom(2):
+          nbText """
 - extended networks of suppliers
 - demand-driven market
-- compete on both **service** and **cost**
+- compete on both *service* and **cost**
 - turbulence and volatility
 """
     speakerNote """
@@ -55,44 +56,52 @@ template storageTransportation* =
         nbImage "images/container-ship.png"
 
 template e2ePlanning* =
-  slide:
+  autoAnimateSlides(5):
     nbText "### Planning"
-    columns:
-      column:
-        nbText "**Demand**"
-        nbImg("images/demand.png", "300px") # does not respond to width
-      column:
-        nbText "**Service**"
-        nbImg("images/service.png", "300px")
-      column:
-        nbText "**Stock**"
-        nbImg("images/stock.png", "300px")
+    showFrom(2):
+      columns:
+        column:
+          nbText "**Demand**"
+          showFrom(3):
+            nbImg("images/demand.png", "300px") # does not respond to width
+        column:
+          nbText "*Service*"
+          showFrom(5):
+            nbImg("images/service.png", "300px")
+        column:
+          nbText "**Stock**"
+          showFrom(4):
+            nbImg("images/stock.png", "300px")
 
 template uncertainty* =
-  slide:
+  autoAnimateSlides(3):
     nbText "### Uncertainity"
     nbText "Demand is uncertain, Supply is uncertain"
-    columns:
-      column:
-        nbText "#### **Lead Time**"
-        nbImg("images/lead-time.png", "500px")
-      column:
-        nbText """#### **Safety Stock**
-- extra stock due to uncertainty to mitigate risk of stock outs
-- linked to demand variability
-"""
+    showAt(2):
+      nbText "#### *Lead Time*"
+      nbImg("images/lead-time.png", "500px")
+    showFrom(3):
+      columns:
+        column:
+          nbText "#### *Lead Time*"
+          nbImg("images/lead-time.png", "500px")
+        column:
+          nbText """#### **Safety Stock**
+  - extra stock due to uncertainty to mitigate risk of stock outs
+  - linked to demand variability
+  """
 
 template constraints* =
-  autoAnimateSlides(2):
-    nbText """
-### Constraints
-
+  autoAnimateSlides(3):
+    nbText "### Constraints"
+    showFrom(2):
+      nbText """
 - **capacity** constraints: production, budget, storage, time
 - **integral** constraint: minimum lot, incremental lot, unit of measures
 - **feasibility** constraints: schedules, opening hours
 """
-    showFrom(2):
-      nbText "Optimization techniques (Operations Research)"
+    showFrom(3):
+      nbText "Optimization techniques (*Operations Research*)"
 
 template all* =
   sectionSlide
@@ -105,5 +114,5 @@ template all* =
 
 when isMainModule:
   myInit("logistics.nim")
-  constraints
+  all
   nbSave

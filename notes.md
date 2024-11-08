@@ -3,11 +3,7 @@
 changes
 - agenda: add emojis [x]
 - domain [x]
-- logistics
-  - supply chain. color + animate
-  - planning: color + animate
-  - uncertainty: color + animate?
-  - constraints: color
+- logistics [x]
 - forecast
   - dimension (color + animate)
   - algos (color + animate?)
