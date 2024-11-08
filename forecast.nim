@@ -21,15 +21,19 @@ template modelling* =
         nbImage "images/forecast-dimensions.png"
       column:
         nbText """
-- Product (SKUs, Family, Brands, Divisions) 10-1M
-- Market (Warehouses, Regions, Customers, Channels) 5-1K
-- Time (day, week, month) (12-52-365)*(1-3)
-
-Dataset size: 10K-10B
+- **Product** (SKUs, Family, Brands, Divisions)
+- *Market* (Warehouses, Regions, Customers, Channels)
+- Time (day, week, month)
+"""
+    speakerNote """
+- Product 10-1M
+- Market 5-1K
+- Time (12-52-365)*(1-3)
+- Dataset size: 10K-10B
 """
 
 template algorithms* =
-  slide:
+  autoAnimateSlides(2):
     nbText "### Algorithms"
     columns:
       column:
@@ -43,7 +47,8 @@ $$y_{t+1} = \alpha x_t + (1 - \alpha)y_t$$
 - Croston (intermitted demand)
 """
       column:
-        nbText """**ML**
+        showFrom(2):
+          nbText """*ML*
 - boosting methods (LightGBM, ...)
 - neural methods (DeepAR, ...)
 - foundational models (TimeGPT)
@@ -51,7 +56,7 @@ $$y_{t+1} = \alpha x_t + (1 - \alpha)y_t$$
     speakerNote "additive and multiplicative"
 
 template evaluation* =
-  slide:
+  autoAnimateSlides(2):
     nbText "### Evaluation"
     columns:
       column:
@@ -62,8 +67,10 @@ template evaluation* =
 - MAE
 - ❌ MAPE
 """
+        reference "[vandeput's article](https://www.linkedin.com/pulse/forecast-kpi-rmse-mae-mape-bias-nicolas-vandeput/)"
       column:
-        nbText """**M5 Competition**
+        showFrom(2):
+          nbText """*M5 Competition*
 
 - Kaggle competition
 - Walmart Sales data
@@ -71,22 +78,25 @@ template evaluation* =
 - 12 product-market levels
 - WRMSSE
 """
-        reference "[research article](https://www.sciencedirect.com/science/article/pii/S0169207021001874)"
+          reference "[research article](https://www.sciencedirect.com/science/article/pii/S0169207021001874)"
     speakerNote """
 """
 
 template problems* =
-  slide:
+  autoAnimateSlides(4):
     columns:
       column:
         nbText "**Seasonality**"
-        nbImage "images/seasonality.png"
+        showFrom(2):
+          nbImage "images/seasonality.png"
       column:
         nbText "**Promotions**"
-        nbImage "images/promotions.png"
+        showFrom(3):
+          nbImage "images/promotions.png"
       column:
         nbText "**Initialization**"
-        nbImage "images/initialization.png"
+        showFrom(4):
+          nbImage "images/initialization.png"
 
 template all* =
   forecastSection
@@ -99,5 +109,5 @@ template all* =
 
 when isMainModule:
   myInit("forecast.nim")
-  problems
+  all
   nbSave

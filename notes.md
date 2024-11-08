@@ -4,22 +4,9 @@ changes
 - agenda: add emojis [x]
 - domain [x]
 - logistics [x]
-- forecast
-  - dimension (color + animate)
-  - algos (color + animate?)
-  - evaluation (color + animate?)
-  - seas+promo+init (animate)
+  - added automation [x]
+- forecast [x]
 - add pyconit at the end!
-
-1. orange highlight color!!! [x]
-  - title slide with name and event [x]
-  - check witboost slide
-2. make slides look decent
-3. add relevant animations
-  - me [x]
-  - conclusions [x]
-4. more emojis
-  - agenda
 
 ## slides list
 

@@ -75,30 +75,37 @@ template domainDrivenDesign* =
 """
 
 template dataMesh* =
-  autoAnimateSlides(2):
+  autoAnimateSlides(3):
     nbText "## Data Mesh"
     columns:
       column:
         nbImage "images/data-mesh.png"
       column:
-        nbText "⠀"
-        nbText """
-- DDD for Big Data
-- *Data Product*
-- [agilelab.it/blog](https://www.agilelab.it/blog)
-"""
-    showFrom(2):
+        showUntil(2):
+          nbText "⠀"
+          nbText """
+  - DDD for Big Data
+  - *Data Product*
+  - [agilelab.it/blog](https://www.agilelab.it/blog)
+  """
+        showAt(3):
+          nbImg("images/paolo.png", "200px")
+    showAt(2):
       nbText "Our product: _witboost_ 🤝"
+
+template subSectionInspiration* =
+  slide nbText "# Inspiration 💡"
 
 template all* =
   sectionSlide
   vennDiagram
   memeContent
   successProjects
+  subSectionInspiration
   domainDrivenDesign
   dataMesh
 
 when isMainModule:
   myInit("domain.nim")
-  all
+  dataMesh
   nbSave
