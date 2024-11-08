@@ -55,6 +55,11 @@ template storageTransportation* =
         nbText "### Transportation"
         nbImage "images/container-ship.png"
 
+template automation* =
+  slide:
+    nbText "### Automation"
+    nbImage "images/automation.png"
+
 template e2ePlanning* =
   autoAnimateSlides(5):
     nbText "### Planning"
@@ -107,6 +112,7 @@ template all* =
   sectionSlide
   whatLogistic
   storageTransportation
+  automation
   modernSupplyChains
   e2ePlanning
   uncertainty
