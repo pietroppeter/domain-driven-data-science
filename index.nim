@@ -33,7 +33,7 @@ template agendaSlide* =
 ## Agenda
 
 1. Why domain is important? 🤹
-2. Supply Chain and Logistics 📦
+2. Logistics and Supply Chain 📦
   - Forecasting 🔮
 3. Stories and Ideas 💡
 """
