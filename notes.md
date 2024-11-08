@@ -2,11 +2,7 @@
 
 changes
 - agenda: add emojis [x]
-- domain
-  - memeSlide!!! add orange [x]
-  - failure: change to success? colors and animate?
-  - DDD, add orange [x] + animate?
-  - Data Mesh, add orange + animate + link to Paolo
+- domain [x]
 - logistics
   - supply chain. color + animate
   - planning: color + animate

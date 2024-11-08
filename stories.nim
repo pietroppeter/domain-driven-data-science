@@ -124,16 +124,27 @@ tool that shows data and visualization.
 """
 
 template documentDomain* =
-  slide:
+  autoAnimateSlides(5):
     nbText "### Document the domain"
-    nbText """
-e.g. *Business*, **Domain** and *Data* essentials in README
-
+    showFrom(2):
+      nbText "e.g. **Business**, *Domain* and **Data** essentials in README"
+    showFrom(3):
+      nbText """
 ```md
-- Customer X is investing strategically in 3rd party logistics
+- Company X is investing strategically in 3rd party logistics
 - Low costs are key to a successful operation
+```
+"""
+    showFrom(4):
+      nbText """
+```md
 - Main cost component in a Warehouse is picking (time)
 - Using a ABC class based positioning of items could help
+```
+"""
+    showFrom(5):
+      nbText """
+```md
 - Data comes from a WMS
 - We have 2 years of data, 1 year of clean data
 ```
@@ -195,5 +206,5 @@ template all* =
 
 when isMainModule:
   myInit("stories.nim")
-  randomForestVSXgboost
+  documentDomain
   nbSave

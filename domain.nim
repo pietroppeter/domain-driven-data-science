@@ -4,28 +4,31 @@ import my
 template sectionSlide* =
   slide nbText "# 1. Domain is important 🤹"
 
-template failureProjects* =
-  slide:
-    nbText "### Failure of DS/ML/AI Projects"
-    nbText "some reasons why projects might fail" 
-    columns:
-      column:
-        nbText """
-#### Technology
-
+template successProjects* =
+  autoAnimateSlides(2):
+    nbText "### Success of DS/ML/AI Projects"
+    showAt(1):
+      nbText "**Technology**"
+      nbText """
 - data quality
 - model accuracy
-- implementation performance
-- ...
+- implementation
 """
-      column:
-        nbText """
-#### Business
-
-- stakeholders lost interest
-- not valuable
-- not used
-- ...
+    showAt(2):
+      columns:
+        column:
+          nbText "**Technology**"
+          nbText """
+- data quality
+- model accuracy
+- implementation
+"""
+        column:
+          nbText "*Business*"
+          nbText """
+- stakeholders
+- valuable
+- used
 """
     speakerNote """
 - idea is domain expertise helps mostly to avoid business related failures
@@ -52,7 +55,7 @@ template memeContent* =
           nbImage "images/code-content.png"
         # jonah hill excited
       column:
-        nbText "🚚 **Domain**"
+        nbText "🚚 *Domain*"
         showFrom(4):
           nbRawHtml """<iframe src="https://giphy.com/embed/GTcGizhnF7wo2F74qP" width="480" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/GTcGizhnF7wo2F74qP">via GIPHY</a></p>"""
         # john travolta
@@ -81,21 +84,21 @@ template dataMesh* =
         nbText "⠀"
         nbText """
 - DDD for Big Data
-- **Data Product**
-- follow [Paolo Platter](https://www.linkedin.com/in/paoloplatter/)
+- *Data Product*
+- [agilelab.it/blog](https://www.agilelab.it/blog)
 """
     showFrom(2):
-      nbText "Product by AgileLab: _witboost_"
+      nbText "Our product: _witboost_ 🤝"
 
 template all* =
   sectionSlide
   vennDiagram
   memeContent
-  failureProjects
+  successProjects
   domainDrivenDesign
   dataMesh
 
 when isMainModule:
   myInit("domain.nim")
-  memeContent
+  all
   nbSave
