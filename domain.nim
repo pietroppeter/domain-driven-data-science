@@ -52,7 +52,7 @@ template memeContent* =
           nbImage "images/code-content.png"
         # jonah hill excited
       column:
-        nbText "🚚 Domain"
+        nbText "🚚 **Domain**"
         showFrom(4):
           nbRawHtml """<iframe src="https://giphy.com/embed/GTcGizhnF7wo2F74qP" width="480" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/GTcGizhnF7wo2F74qP">via GIPHY</a></p>"""
         # john travolta
@@ -66,9 +66,9 @@ template domainDrivenDesign* =
       column:
         nbText "⠀"
         nbText """
-- methodology from SWE
-- **ubiquitous language**
+- from **SWE**
 - domain is important for devs
+- *ubiquitous language*
 """
 
 template dataMesh* =
@@ -97,5 +97,5 @@ template all* =
 
 when isMainModule:
   myInit("domain.nim")
-  dataMesh
+  memeContent
   nbSave

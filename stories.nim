@@ -11,7 +11,7 @@ template aSlide* =
 """
 
 template sectionSlide* =
-  slide nbText "# 3. Stories & Ideas ✨"
+  slide nbText "# 3. Stories & Ideas 💡"
 
 template dataGeneratingProcess* = 
   autoAnimateSlides(2):
@@ -127,11 +127,11 @@ template documentDomain* =
   slide:
     nbText "### Document the domain"
     nbText """
-e.g. _Business, Domain and Data essentials_ in README
+e.g. *Business*, **Domain** and *Data* essentials in README
 
 ```md
 - Customer X is investing strategically in 3rd party logistics
-- The cost of the operation is not what is expected
+- Low costs are key to a successful operation
 - Main cost component in a Warehouse is picking (time)
 - Using a ABC class based positioning of items could help
 - Data comes from a WMS

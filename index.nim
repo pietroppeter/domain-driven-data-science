@@ -7,6 +7,11 @@ template titleSlide* =
   slide:
     nbText """
 ## Domain-driven Data Science
+
+**Pietro Peterlongo**
+
+*PyData NYC, Nov 8 2024*
+
 """
     reference "[github.com/pietroppeter/domain-driven-data-science](https://github.com/pietroppeter/domain-driven-data-science)"
 # add name and event?
@@ -19,18 +24,18 @@ template agendaSlide* =
       nbText """
 ## Agenda
 
-1. Why domain is important?
-2. Supply Chain and Logistics
-3. Stories and Ideas
+1. Why domain is important? 🤹
+2. Logistics and Supply Chain 📦
+3. Stories and Ideas 💡
 """
     showAt(2):
       nbText """
 ## Agenda
 
-1. Why domain is important?
-2. Supply Chain and Logistics
-  - Forecasting
-3. Stories and Ideas
+1. Why domain is important? 🤹
+2. Supply Chain and Logistics 📦
+  - Forecasting 🔮
+3. Stories and Ideas 💡
 """
     speakerNote """
 - (1) problem and opportunity
@@ -51,16 +56,18 @@ since I want to hear more of them
 
 template meSlide* =
   # todo: make it appear one by one
-  slide:
-    nbText """
-### 👋 Pietro (he/him) 👨‍👩‍👧🇮🇹🍝🏔️⛵️🎭
-
-- 🧮👨‍🔬 (Applied) Math
-- 🏭🧑‍💻 DS@ToolsGroup [toolsgroup.com](toolsgroup.com)
-- 🐙🗽 Recurse Center [recurse.com](recurse.com) 
-- 💙🧡 PyData Milan [milano.python.it](milano.python.it)
-- 🏄🧑‍💻 DS@AgileLab [handbook.agilelab.it](handbook.agilelab.it)
-"""
+  autoAnimateSlides(6):
+    nbText "### 👋 Pietro (he/him) 👨‍👩‍👧🇮🇹🍝🏔️⛵️🎭"
+    showFrom(2):
+      nbText "- 🧮👨‍🔬 (Applied) Math"
+    showFrom(3):
+      nbText "- 🏭🧑‍💻 DS@ToolsGroup [toolsgroup.com](toolsgroup.com)"
+    showFrom(4):
+      nbText "- 🐙🗽 Recurse Center [recurse.com](recurse.com)"
+    showFrom(5):
+      nbText "- 💙🧡 PyData Milan [milano.python.it](milano.python.it)"
+    showFrom(6):
+      nbText "- 🏄🧑‍💻 DS@AgileLab [handbook.agilelab.it](handbook.agilelab.it)"
     speakerNote """
 - Hi I am Pietro and these are my emojis...
 - (math) dynamical systems, weather and climate as my first domain (research), later cryptography
@@ -79,15 +86,14 @@ so that we can learn from multiple point of views
 """
 
 template conclusions* =
-  slide:
-    nbText """
-### Conclusions
-
-- **Domain**: a worthy and relatively untapped
-opportunity for Data Scientist
-- More complexity than you might expect
-- Inspired to learn and talk about your domain?
-"""
+  autoAnimateSlides(5):
+    nbText "### Conclusions"
+    showFrom(2):
+      nbText "- *Domain*: a worthy and relatively untapped opportunity for Data Scientist"
+    showFrom(3):
+      nbText "- More **complexity** than you might expect"
+    showFrom(4):
+      nbText "- Inspired to learn and talk about your domain? 💡"
 
 template thanks* = 
   slide:
@@ -95,7 +101,7 @@ template thanks* =
     reference "🧑‍💻 [github.com/pietroppeter](https://github.com/pietroppeter)"
     reference "🦋 [@pietroppeter.bsky.social](https://bsky.app/profile/pietroppeter.bsky.social)"
     reference "🐘 [@pietroppeter@fosstodon](https://fosstodon.org/@pietroppeter)"
-    reference "👨‍💼 [LinkedIn - Pietro Peterlongo](https://www.linkedin.com/in/pietro-peterlongo-b7605627/)"
+    nbText "👨‍💼 [LinkedIn - Pietro Peterlongo](https://www.linkedin.com/in/pietro-peterlongo-b7605627/)"
     nbText "🔵⚪️ [agilelab.it](https://www.agilelab.it/)"
 
 template presentation* =

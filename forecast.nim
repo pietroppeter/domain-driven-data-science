@@ -3,7 +3,7 @@ import my
 
 
 template forecastSection* =
-  slide nbText "# 2.1 Forecasting"
+  slide nbText "# 2.1 Forecasting 🔮"
 
 
 template pymiTalkForecastingNixtla* =

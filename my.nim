@@ -6,6 +6,7 @@ const
   agileLightBlue* = "#02A4BD"
   agileDarkBlue* = "#0e1f53"
   agileWhite* = "#FFF"
+  witboostOrange* = "#ee961a"
   agileLogUrl* = "https://www.agilelab.it/hubfs/logo-agilelab.png"
 
 template addNbTextSmall* =
@@ -72,8 +73,13 @@ template myInit*(sourceFileRel = "my.nim") =
   font-style: normal;
 }
 
+.reveal em {
+    color: $2;
+    font-style: normal;
+    font-weight: 700;
+}
 </style>
-""" % [agileLightBlue]
+""" % [agileLightBlue, witboostOrange]
   nb.partials["nimibCodeAnimate"] = nb.partials["animateCode"]
   nb.renderPlans["nimibCodeAnimate"] = nb.renderPlans["animateCode"]
   nb.partials["logo"] = """
@@ -95,3 +101,20 @@ height: 70px;"></div>
   </body>
 </html>
 """
+
+template testSlide =
+  slide:
+    nbText """
+## H2 header
+
+### H3 header
+
+Text with *italic*, **strong** and [link](recurse.com)
+
+> a quote
+"""
+
+when isMainModule:
+  myInit("my.nim")
+  testSlide
+  nbSave  

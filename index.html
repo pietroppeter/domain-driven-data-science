@@ -37,9 +37,16 @@ li {
   font-style: normal;
 }
 
+.reveal em {
+    color: #ee961a;
+    font-style: normal;
+    font-weight: 700;
+}
 </style>
       <section data-nimib-slide-number="1" >
       <h2>Domain-driven Data Science</h2>
+<p><strong>Pietro Peterlongo</strong></p>
+<p><em>PyData NYC, Nov 8 2024</em></p>
       <small><p><a href="https://github.com/pietroppeter/domain-driven-data-science">github.com/pietroppeter/domain-driven-data-science</a></p></small>
       </section>
       <section data-nimib-slide-number="2" data-auto-animate >
@@ -51,7 +58,7 @@ li {
 </ol>
       <aside class="notes">
   <ul>
-<li>(1) problem and opprotunity</li>
+<li>(1) problem and opportunity</li>
 <li>(2) the domain I know best</li>
 <li>(3) give hints</li>
 <li>mention appendix on DDD/Data Mesh? or it is part one</li>
@@ -77,14 +84,13 @@ since I want to hear more of them</p>
 </ol>
 <ul>
 <li>Forecasting</li>
-<li>Optimization</li>
 </ul>
 <ol start="3">
 <li>Stories and Ideas</li>
 </ol>
       <aside class="notes">
   <ul>
-<li>(1) problem and opprotunity</li>
+<li>(1) problem and opportunity</li>
 <li>(2) the domain I know best</li>
 <li>(3) give hints</li>
 <li>mention appendix on DDD/Data Mesh? or it is part one</li>
@@ -102,14 +108,32 @@ since I want to hear more of them</p>
 
 </aside>
       </section>
-      <section data-nimib-slide-number="4" >
+      <section data-nimib-slide-number="4" data-auto-animate >
       <h3>👋 Pietro (he/him) 👨‍👩‍👧🇮🇹🍝🏔️⛵️🎭</h3>
+      <aside class="notes">
+  <ul>
+<li>Hi I am Pietro and these are my emojis...</li>
+<li>(math) dynamical systems, weather and climate as my first domain (research), later cryptography</li>
+<li>ToolsGroup, 9 years, 200-300 international, 30 yrs old</li>
+<li>(break)</li>
+<li>AgileLab, &lt;1yr, 150-200 consulting in 10 yrs</li>
+</ul>
+<p>Motivation for this part is:</p>
 <ul>
+<li>in part credibility in what I say</li>
+<li>but a lot also to put into context of what I say</li>
+<li>and to be clear about limitations about what I say</li>
+<li>(it may or not apply to your case)</li>
+</ul>
+<p>My hope in general is that more people do talks about domain expertise
+so that we can learn from multiple point of views</p>
+
+</aside>
+      </section>
+      <section data-nimib-slide-number="5" data-auto-animate >
+      <h3>👋 Pietro (he/him) 👨‍👩‍👧🇮🇹🍝🏔️⛵️🎭</h3>
+      <ul>
 <li>🧮👨‍🔬 (Applied) Math</li>
-<li>🏭🧑‍💻 DS@ToolsGroup <a href="toolsgroup.com">toolsgroup.com</a></li>
-<li>🐙🗽 Recurse Center <a href="recurse.com">recurse.com</a></li>
-<li>💙🧡 PyData Milan <a href="milano.python.it">milano.python.it</a></li>
-<li>🏄🧑‍💻 DS@AgileLab <a href="agilelab.it">agilelab.it</a></li>
 </ul>
       <aside class="notes">
   <ul>
@@ -131,18 +155,148 @@ so that we can learn from multiple point of views</p>
 
 </aside>
       </section>
-      <section data-nimib-slide-number="5" >
-      <section data-nimib-slide-number="6" >
+      <section data-nimib-slide-number="6" data-auto-animate >
+      <h3>👋 Pietro (he/him) 👨‍👩‍👧🇮🇹🍝🏔️⛵️🎭</h3>
+      <ul>
+<li>🧮👨‍🔬 (Applied) Math</li>
+</ul>
+      <ul>
+<li>🏭🧑‍💻 DS@ToolsGroup <a href="toolsgroup.com">toolsgroup.com</a></li>
+</ul>
+      <aside class="notes">
+  <ul>
+<li>Hi I am Pietro and these are my emojis...</li>
+<li>(math) dynamical systems, weather and climate as my first domain (research), later cryptography</li>
+<li>ToolsGroup, 9 years, 200-300 international, 30 yrs old</li>
+<li>(break)</li>
+<li>AgileLab, &lt;1yr, 150-200 consulting in 10 yrs</li>
+</ul>
+<p>Motivation for this part is:</p>
+<ul>
+<li>in part credibility in what I say</li>
+<li>but a lot also to put into context of what I say</li>
+<li>and to be clear about limitations about what I say</li>
+<li>(it may or not apply to your case)</li>
+</ul>
+<p>My hope in general is that more people do talks about domain expertise
+so that we can learn from multiple point of views</p>
+
+</aside>
+      </section>
+      <section data-nimib-slide-number="7" data-auto-animate >
+      <h3>👋 Pietro (he/him) 👨‍👩‍👧🇮🇹🍝🏔️⛵️🎭</h3>
+      <ul>
+<li>🧮👨‍🔬 (Applied) Math</li>
+</ul>
+      <ul>
+<li>🏭🧑‍💻 DS@ToolsGroup <a href="toolsgroup.com">toolsgroup.com</a></li>
+</ul>
+      <ul>
+<li>🐙🗽 Recurse Center <a href="recurse.com">recurse.com</a></li>
+</ul>
+      <aside class="notes">
+  <ul>
+<li>Hi I am Pietro and these are my emojis...</li>
+<li>(math) dynamical systems, weather and climate as my first domain (research), later cryptography</li>
+<li>ToolsGroup, 9 years, 200-300 international, 30 yrs old</li>
+<li>(break)</li>
+<li>AgileLab, &lt;1yr, 150-200 consulting in 10 yrs</li>
+</ul>
+<p>Motivation for this part is:</p>
+<ul>
+<li>in part credibility in what I say</li>
+<li>but a lot also to put into context of what I say</li>
+<li>and to be clear about limitations about what I say</li>
+<li>(it may or not apply to your case)</li>
+</ul>
+<p>My hope in general is that more people do talks about domain expertise
+so that we can learn from multiple point of views</p>
+
+</aside>
+      </section>
+      <section data-nimib-slide-number="8" data-auto-animate >
+      <h3>👋 Pietro (he/him) 👨‍👩‍👧🇮🇹🍝🏔️⛵️🎭</h3>
+      <ul>
+<li>🧮👨‍🔬 (Applied) Math</li>
+</ul>
+      <ul>
+<li>🏭🧑‍💻 DS@ToolsGroup <a href="toolsgroup.com">toolsgroup.com</a></li>
+</ul>
+      <ul>
+<li>🐙🗽 Recurse Center <a href="recurse.com">recurse.com</a></li>
+</ul>
+      <ul>
+<li>💙🧡 PyData Milan <a href="milano.python.it">milano.python.it</a></li>
+</ul>
+      <aside class="notes">
+  <ul>
+<li>Hi I am Pietro and these are my emojis...</li>
+<li>(math) dynamical systems, weather and climate as my first domain (research), later cryptography</li>
+<li>ToolsGroup, 9 years, 200-300 international, 30 yrs old</li>
+<li>(break)</li>
+<li>AgileLab, &lt;1yr, 150-200 consulting in 10 yrs</li>
+</ul>
+<p>Motivation for this part is:</p>
+<ul>
+<li>in part credibility in what I say</li>
+<li>but a lot also to put into context of what I say</li>
+<li>and to be clear about limitations about what I say</li>
+<li>(it may or not apply to your case)</li>
+</ul>
+<p>My hope in general is that more people do talks about domain expertise
+so that we can learn from multiple point of views</p>
+
+</aside>
+      </section>
+      <section data-nimib-slide-number="9" data-auto-animate >
+      <h3>👋 Pietro (he/him) 👨‍👩‍👧🇮🇹🍝🏔️⛵️🎭</h3>
+      <ul>
+<li>🧮👨‍🔬 (Applied) Math</li>
+</ul>
+      <ul>
+<li>🏭🧑‍💻 DS@ToolsGroup <a href="toolsgroup.com">toolsgroup.com</a></li>
+</ul>
+      <ul>
+<li>🐙🗽 Recurse Center <a href="recurse.com">recurse.com</a></li>
+</ul>
+      <ul>
+<li>💙🧡 PyData Milan <a href="milano.python.it">milano.python.it</a></li>
+</ul>
+      <ul>
+<li>🏄🧑‍💻 DS@AgileLab <a href="handbook.agilelab.it">handbook.agilelab.it</a></li>
+</ul>
+      <aside class="notes">
+  <ul>
+<li>Hi I am Pietro and these are my emojis...</li>
+<li>(math) dynamical systems, weather and climate as my first domain (research), later cryptography</li>
+<li>ToolsGroup, 9 years, 200-300 international, 30 yrs old</li>
+<li>(break)</li>
+<li>AgileLab, &lt;1yr, 150-200 consulting in 10 yrs</li>
+</ul>
+<p>Motivation for this part is:</p>
+<ul>
+<li>in part credibility in what I say</li>
+<li>but a lot also to put into context of what I say</li>
+<li>and to be clear about limitations about what I say</li>
+<li>(it may or not apply to your case)</li>
+</ul>
+<p>My hope in general is that more people do talks about domain expertise
+so that we can learn from multiple point of views</p>
+
+</aside>
+      </section>
+      <section data-nimib-slide-number="10" >
+      <section data-nimib-slide-number="11" >
       <h1>1. Domain is important 🤹</h1>
       </section>
-      <section data-nimib-slide-number="7" >
+      <section data-nimib-slide-number="12" >
       <figure>
 <img src="images/venn2.png" alt="" width="500px">
 <figcaption></figcaption>
 </figure>
       <small><p><a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram">Data Science Venn Diagram, Drew Conway, 2010</a></p></small>
       </section>
-      <section data-nimib-slide-number="8" data-auto-animate >
+      <section data-nimib-slide-number="13" data-auto-animate >
       <h3>📚 Content Production</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -157,7 +311,7 @@ so that we can learn from multiple point of views</p>
       </div>
       </div>
       </section>
-      <section data-nimib-slide-number="9" data-auto-animate >
+      <section data-nimib-slide-number="14" data-auto-animate >
       <h3>📚 Content Production</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -176,7 +330,7 @@ so that we can learn from multiple point of views</p>
       </div>
       </div>
       </section>
-      <section data-nimib-slide-number="10" data-auto-animate >
+      <section data-nimib-slide-number="15" data-auto-animate >
       <h3>📚 Content Production</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -199,7 +353,7 @@ so that we can learn from multiple point of views</p>
       </div>
       </div>
       </section>
-      <section data-nimib-slide-number="11" data-auto-animate >
+      <section data-nimib-slide-number="16" data-auto-animate >
       <h3>📚 Content Production</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -223,7 +377,7 @@ so that we can learn from multiple point of views</p>
       </div>
       </div>
       </section>
-      <section data-nimib-slide-number="12" >
+      <section data-nimib-slide-number="17" >
       <h3>Failure of DS/ML/AI Projects</h3>
       <p>some reasons why projects might fail</p>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
@@ -255,12 +409,73 @@ so that we can learn from multiple point of views</p>
 
 </aside>
       </section>
+      <section data-nimib-slide-number="18" >
+      <h2>Domain Driven Design</h2>
+      <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
+  
+      <div>
+      <figure>
+<img src="images/ddd.png" alt="">
+<figcaption></figcaption>
+</figure>
+      </div>
+      <div>
+      <p>⠀</p>
+      <ul>
+<li>methodology from SWE</li>
+<li><strong>ubiquitous language</strong></li>
+<li>domain is important for devs</li>
+</ul>
+      </div>
+      </div>
       </section>
-      <section data-nimib-slide-number="13" >
-      <section data-nimib-slide-number="14" >
+      <section data-nimib-slide-number="19" data-auto-animate >
+      <h2>Data Mesh</h2>
+      <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
+  
+      <div>
+      <figure>
+<img src="images/data-mesh.png" alt="">
+<figcaption></figcaption>
+</figure>
+      </div>
+      <div>
+      <p>⠀</p>
+      <ul>
+<li>DDD for Big Data</li>
+<li><strong>Data Product</strong></li>
+<li>follow <a href="https://www.linkedin.com/in/paoloplatter/">Paolo Platter</a></li>
+</ul>
+      </div>
+      </div>
+      </section>
+      <section data-nimib-slide-number="20" data-auto-animate >
+      <h2>Data Mesh</h2>
+      <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
+  
+      <div>
+      <figure>
+<img src="images/data-mesh.png" alt="">
+<figcaption></figcaption>
+</figure>
+      </div>
+      <div>
+      <p>⠀</p>
+      <ul>
+<li>DDD for Big Data</li>
+<li><strong>Data Product</strong></li>
+<li>follow <a href="https://www.linkedin.com/in/paoloplatter/">Paolo Platter</a></li>
+</ul>
+      </div>
+      </div>
+      <p>Product by AgileLab: <em>witboost</em></p>
+      </section>
+      </section>
+      <section data-nimib-slide-number="21" >
+      <section data-nimib-slide-number="22" >
       <h1>2. Logistics &amp; Supply Chain 🚚</h1>
       </section>
-      <section data-nimib-slide-number="15" >
+      <section data-nimib-slide-number="23" >
       <h3>What is Logistics?</h3>
       <figure>
 <img src="images/logistics.png" alt="">
@@ -285,7 +500,7 @@ that current and future profitability are maximised through the cost-effective f
 
 </aside>
       </section>
-      <section data-nimib-slide-number="16" >
+      <section data-nimib-slide-number="24" >
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
       <div>
@@ -304,7 +519,7 @@ that current and future profitability are maximised through the cost-effective f
       </div>
       </div>
       </section>
-      <section data-nimib-slide-number="17" >
+      <section data-nimib-slide-number="25" >
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
       <div>
@@ -331,7 +546,7 @@ that current and future profitability are maximised through the cost-effective f
 
 </aside>
       </section>
-      <section data-nimib-slide-number="18" >
+      <section data-nimib-slide-number="26" >
       <h3>Planning</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -358,7 +573,7 @@ that current and future profitability are maximised through the cost-effective f
       </div>
       </div>
       </section>
-      <section data-nimib-slide-number="19" >
+      <section data-nimib-slide-number="27" >
       <h3>Uncertainity</h3>
       <p>Demand is uncertain, Supply is uncertain</p>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
@@ -379,12 +594,29 @@ that current and future profitability are maximised through the cost-effective f
       </div>
       </div>
       </section>
+      <section data-nimib-slide-number="28" data-auto-animate >
+      <h3>Constraints</h3>
+<ul>
+<li><strong>capacity</strong> constraints: production, budget, storage, time</li>
+<li><strong>integral</strong> constraint: minimum lot, incremental lot, unit of measures</li>
+<li><strong>feasibility</strong> constraints: schedules, opening hours</li>
+</ul>
       </section>
-      <section data-nimib-slide-number="20" >
-      <section data-nimib-slide-number="21" >
+      <section data-nimib-slide-number="29" data-auto-animate >
+      <h3>Constraints</h3>
+<ul>
+<li><strong>capacity</strong> constraints: production, budget, storage, time</li>
+<li><strong>integral</strong> constraint: minimum lot, incremental lot, unit of measures</li>
+<li><strong>feasibility</strong> constraints: schedules, opening hours</li>
+</ul>
+      <p>Optimization techniques (Operations Research)</p>
+      </section>
+      </section>
+      <section data-nimib-slide-number="30" >
+      <section data-nimib-slide-number="31" >
       <h1>2.1 Forecasting</h1>
       </section>
-      <section data-nimib-slide-number="22" >
+      <section data-nimib-slide-number="32" >
       <h3>Modelling</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -405,7 +637,7 @@ that current and future profitability are maximised through the cost-effective f
       </div>
       </div>
       </section>
-      <section data-nimib-slide-number="23" >
+      <section data-nimib-slide-number="33" >
       <h3>Algorithms</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -432,7 +664,7 @@ that current and future profitability are maximised through the cost-effective f
 
 </aside>
       </section>
-      <section data-nimib-slide-number="24" >
+      <section data-nimib-slide-number="34" >
       <h3>Evaluation</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -461,7 +693,7 @@ that current and future profitability are maximised through the cost-effective f
   
 </aside>
       </section>
-      <section data-nimib-slide-number="25" >
+      <section data-nimib-slide-number="35" >
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
       <div>
@@ -487,7 +719,7 @@ that current and future profitability are maximised through the cost-effective f
       </div>
       </div>
       </section>
-      <section data-nimib-slide-number="26" >
+      <section data-nimib-slide-number="36" >
       <h3>Forecasting with Nixtla</h3>
       <figure>
 <img src="images/talk-pymi-forecasting.png" alt="">
@@ -496,67 +728,11 @@ that current and future profitability are maximised through the cost-effective f
       <small><p><a href="https://github.com/pietroppeter/pymi-timeseries-forecasting-nixtla">github.com/pietroppeter/pymi-timeseries-forecasting-nixtla</a></p></small>
       </section>
       </section>
-      <section data-nimib-slide-number="27" >
-      <section data-nimib-slide-number="28" >
+      <section data-nimib-slide-number="37" >
+      <section data-nimib-slide-number="38" >
       <h1>3. Stories &amp; Ideas ✨</h1>
       </section>
-      <section data-nimib-slide-number="29" data-auto-animate >
-      <h3>🏗️ Data Generating Process</h3>
-<p>Story: Data Exploration of Warehouse data</p>
-      <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
-  
-      <div>
-      <figure>
-<img src="images/pallet-inbound.png" alt="" width="300px">
-<figcaption></figcaption>
-</figure>
-      </div>
-      <div>
-      <ul>
-<li>order data: many more rows for outbound than inbound orders, why?</li>
-<li>pick task data: missing a day in a specific week, why?</li>
-<li>...</li>
-</ul>
-      </div>
-      </div>
-      <aside class="notes">
-  <ul>
-<li>why more outbound than inbound? outbound is much more complex (suppliers send truck with more )</li>
-<li>why missing pick task data? internet was down for a day for an IT issue</li>
-<li>...</li>
-</ul>
-
-</aside>
-      </section>
-      <section data-nimib-slide-number="30" data-auto-animate >
-      <h3>🏗️ Data Generating Process</h3>
-<p>Story: Data Exploration of Warehouse data</p>
-      <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
-  
-      <div>
-      <figure>
-<img src="images/pallet-outbound.png" alt="" width="300px">
-<figcaption></figcaption>
-</figure>
-      </div>
-      <div>
-      <ul>
-<li>order data: many more rows for outbound than inbound orders, why?</li>
-<li>pick task data: missing a day in a specific week, why?</li>
-<li>...</li>
-</ul>
-      </div>
-      </div>
-      <aside class="notes">
-  <ul>
-<li>why more outbound than inbound? outbound is much more complex (suppliers send truck with more )</li>
-<li>why missing pick task data? internet was down for a day for an IT issue</li>
-<li>...</li>
-</ul>
-
-</aside>
-      </section>
-      <section data-nimib-slide-number="31" >
+      <section data-nimib-slide-number="39" >
       <h3>🔮 Trust in the model</h3>
 <p>Story: a model for forecast of New Product sales</p>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
@@ -587,8 +763,370 @@ that current and future profitability are maximised through the cost-effective f
 
 </aside>
       </section>
+      <section data-nimib-slide-number="40" data-auto-animate >
+      <h3>🏗️ Data Generating Process</h3>
+<p>Story: Data Exploration of Warehouse data</p>
+      <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
+  
+      <div>
+      <figure>
+<img src="images/pallet-inbound.png" alt="" width="300px">
+<figcaption></figcaption>
+</figure>
+      </div>
+      <div>
+      <ul>
+<li>order data: many more rows for outbound than inbound orders, why?</li>
+<li>pick task data: missing a day in a specific week, why?</li>
+<li>...</li>
+</ul>
+      </div>
+      </div>
+      <aside class="notes">
+  <ul>
+<li>why more outbound than inbound? outbound is much more complex (suppliers send truck with more )</li>
+<li>why missing pick task data? internet was down for a day for an IT issue</li>
+<li>...</li>
+</ul>
+
+</aside>
       </section>
-      <section data-nimib-slide-number="32" >
+      <section data-nimib-slide-number="41" data-auto-animate >
+      <h3>🏗️ Data Generating Process</h3>
+<p>Story: Data Exploration of Warehouse data</p>
+      <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
+  
+      <div>
+      <figure>
+<img src="images/pallet-outbound.png" alt="" width="300px">
+<figcaption></figcaption>
+</figure>
+      </div>
+      <div>
+      <ul>
+<li>order data: many more rows for outbound than inbound orders, why?</li>
+<li>pick task data: missing a day in a specific week, why?</li>
+<li>...</li>
+</ul>
+      </div>
+      </div>
+      <aside class="notes">
+  <ul>
+<li>why more outbound than inbound? outbound is much more complex (suppliers send truck with more )</li>
+<li>why missing pick task data? internet was down for a day for an IT issue</li>
+<li>...</li>
+</ul>
+
+</aside>
+      </section>
+      <section data-nimib-slide-number="42" >
+      <h3>Rules of ML</h3>
+      <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
+  
+      <div>
+      <figure>
+<img src="images/first-rule-ml.png" alt="">
+<figcaption></figcaption>
+</figure>
+      <small><p><a href="https://eugeneyan.com/writing/first-rule-of-ml/">Eugene Yan on 1st rule</a></p></small>
+      </div>
+      <div>
+      <ol start="2">
+<li>First, design and implement metrics</li>
+<li>Choose machine learning over a complex heuristic.
+&quot;</li>
+</ol>
+      <small><p><a href="https://developers.google.com/machine-learning/guides/rules-of-ml">Google's rules of ML</a></p></small>
+      </div>
+      </div>
+      <aside class="notes">
+  <ol>
+<li>Don’t be afraid to launch a product without machine learning</li>
+</ol>
+<ul>
+<li>go with a naive forecast or a greedy method, mean, mode</li>
+</ul>
+
+</aside>
+      </section>
+      <section data-nimib-slide-number="43" >
+      <h3>Talk to experts</h3>
+      <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
+  
+      <div>
+      <p><strong>Interview</strong></p>
+      <p>Try to uncover <strong>opportunties</strong> and <strong>risks</strong>
+for a data-driven tool you might want to build.</p>
+      </div>
+      <div>
+      <p>⠀</p>
+      </div>
+      <div>
+      <p><strong>Interface</strong></p>
+      <p>It helps to iterate with an <strong>interactive</strong>
+tool that shows data and visualization.</p>
+      </div>
+      </div>
+      <aside class="notes">
+  <ul>
+<li>interview story: added goal to help them challenge customer orders?</li>
+<li>interface story: streamlit can be refreshing for someone who has seen only BI. The finance story.</li>
+</ul>
+
+</aside>
+      </section>
+      <section data-nimib-slide-number="44" >
+      <h3>Document the domain</h3>
+      <p>e.g. <em>Business, Domain and Data essentials</em> in README</p>
+<pre><code class="language-md">- Customer X is investing strategically in 3rd party logistics
+- The cost of the operation is not what is expected
+- Main cost component in a Warehouse is picking (time)
+- Using a ABC class based positioning of items could help
+- Data comes from a WMS
+- We have 2 years of data, 1 year of clean data
+</code></pre>
+      </section>
+      <section data-nimib-slide-number="45" data-auto-animate >
+      <h3>Random forest vs Xgboost</h3>
+      <p>Context: AutoML for Forecast Initialization</p>
+      <aside class="notes">
+  <ul>
+<li>acknowledge it is a bit of a provocation but</li>
+<li>context is to have an AutoML tool</li>
+<li>ideally boosted trees are better performance wise (but note that performance is not priority here, see previous slide)</li>
+<li>but: they can forecast stuff outside of ranges (that is something you have to take into account - and you cannot just clip away, you have to redistribute &quot;mass&quot;)</li>
+<li>general idea is: resist the hype, sometimes there are reasons</li>
+</ul>
+
+</aside>
+      </section>
+      <section data-nimib-slide-number="46" data-auto-animate >
+      <h3>Random forest vs Xgboost</h3>
+      <p>Context: AutoML for Forecast Initialization</p>
+      <ul>
+<li>boosted trees may predict outside training range</li>
+</ul>
+      <aside class="notes">
+  <ul>
+<li>acknowledge it is a bit of a provocation but</li>
+<li>context is to have an AutoML tool</li>
+<li>ideally boosted trees are better performance wise (but note that performance is not priority here, see previous slide)</li>
+<li>but: they can forecast stuff outside of ranges (that is something you have to take into account - and you cannot just clip away, you have to redistribute &quot;mass&quot;)</li>
+<li>general idea is: resist the hype, sometimes there are reasons</li>
+</ul>
+
+</aside>
+      </section>
+      <section data-nimib-slide-number="47" data-auto-animate >
+      <h3>Random forest vs Xgboost</h3>
+      <p>Context: AutoML for Forecast Initialization</p>
+      <ul>
+<li>boosted trees may predict outside training range</li>
+</ul>
+      <ul>
+<li>boosted trees more difficult to calibrate than RF</li>
+</ul>
+      <aside class="notes">
+  <ul>
+<li>acknowledge it is a bit of a provocation but</li>
+<li>context is to have an AutoML tool</li>
+<li>ideally boosted trees are better performance wise (but note that performance is not priority here, see previous slide)</li>
+<li>but: they can forecast stuff outside of ranges (that is something you have to take into account - and you cannot just clip away, you have to redistribute &quot;mass&quot;)</li>
+<li>general idea is: resist the hype, sometimes there are reasons</li>
+</ul>
+
+</aside>
+      </section>
+      <section data-nimib-slide-number="48" data-auto-animate >
+      <h3>Random forest vs Xgboost</h3>
+      <p>Context: AutoML for Forecast Initialization</p>
+      <ul>
+<li>boosted trees may predict outside training range</li>
+</ul>
+      <ul>
+<li>boosted trees more difficult to calibrate than RF</li>
+</ul>
+      <ul>
+<li>learned: 1) resist the hype; 2) watch your results.</li>
+</ul>
+      <aside class="notes">
+  <ul>
+<li>acknowledge it is a bit of a provocation but</li>
+<li>context is to have an AutoML tool</li>
+<li>ideally boosted trees are better performance wise (but note that performance is not priority here, see previous slide)</li>
+<li>but: they can forecast stuff outside of ranges (that is something you have to take into account - and you cannot just clip away, you have to redistribute &quot;mass&quot;)</li>
+<li>general idea is: resist the hype, sometimes there are reasons</li>
+</ul>
+
+</aside>
+      </section>
+      <section data-nimib-slide-number="49" data-auto-animate >
+      <h3>Random forest vs Xgboost</h3>
+      <p>Context: AutoML for Forecast Initialization</p>
+      <ul>
+<li>boosted trees may predict outside training range</li>
+</ul>
+      <ul>
+<li>boosted trees more difficult to calibrate than RF</li>
+</ul>
+      <ul>
+<li>learned: 1) resist the hype; 2) watch your results.</li>
+</ul>
+      <aside class="notes">
+  <ul>
+<li>acknowledge it is a bit of a provocation but</li>
+<li>context is to have an AutoML tool</li>
+<li>ideally boosted trees are better performance wise (but note that performance is not priority here, see previous slide)</li>
+<li>but: they can forecast stuff outside of ranges (that is something you have to take into account - and you cannot just clip away, you have to redistribute &quot;mass&quot;)</li>
+<li>general idea is: resist the hype, sometimes there are reasons</li>
+</ul>
+
+</aside>
+      </section>
+      <section data-nimib-slide-number="50" data-auto-animate >
+      <h3>Learn the Domain</h3>
+      <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
+  
+      <div>
+      <p><strong>Socials</strong></p>
+      </div>
+      <div>
+      <p><strong>Experts</strong></p>
+      </div>
+      <div>
+      <p><strong>Books</strong></p>
+      </div>
+      </div>
+      </section>
+      <section data-nimib-slide-number="51" data-auto-animate >
+      <h3>Learn the Domain</h3>
+      <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
+  
+      <div>
+      <p><strong>Socials</strong></p>
+      <figure>
+<img src="images/vandeput.png" alt="">
+<figcaption></figcaption>
+</figure>
+      </div>
+      <div>
+      <p><strong>Experts</strong></p>
+      </div>
+      <div>
+      <p><strong>Books</strong></p>
+      </div>
+      </div>
+      </section>
+      <section data-nimib-slide-number="52" data-auto-animate >
+      <h3>Learn the Domain</h3>
+      <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
+  
+      <div>
+      <p><strong>Socials</strong></p>
+      <figure>
+<img src="images/vandeput.png" alt="">
+<figcaption></figcaption>
+</figure>
+      </div>
+      <div>
+      <p><strong>Experts</strong></p>
+      <figure>
+<img src="images/ubicazione.png" alt="">
+<figcaption></figcaption>
+</figure>
+      </div>
+      <div>
+      <p><strong>Books</strong></p>
+      </div>
+      </div>
+      </section>
+      <section data-nimib-slide-number="53" data-auto-animate >
+      <h3>Learn the Domain</h3>
+      <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
+  
+      <div>
+      <p><strong>Socials</strong></p>
+      <figure>
+<img src="images/vandeput.png" alt="">
+<figcaption></figcaption>
+</figure>
+      </div>
+      <div>
+      <p><strong>Experts</strong></p>
+      <figure>
+<img src="images/ubicazione.png" alt="">
+<figcaption></figcaption>
+</figure>
+      </div>
+      <div>
+      <p><strong>Books</strong></p>
+      <figure>
+<img src="images/scl-book.png" alt="">
+<figcaption></figcaption>
+</figure>
+      </div>
+      </div>
+      </section>
+      <aside class="notes">
+  <ul>
+<li>optical networks story</li>
+<li>chatGpt, the good and the bad</li>
+</ul>
+
+</aside>
+      <section data-nimib-slide-number="54" >
+      <h3>Get inspired by Domain</h3>
+<p><strong>5S methodology</strong></p>
+<ol>
+<li>整理 (<em>seiri</em>) Sort</li>
+<li>整頓 (<em>seiton</em>) Straighten</li>
+<li>清掃 (<em>seiso</em>) Shine</li>
+<li>清潔 (<em>seiketsu</em>) Standardize</li>
+<li>しつけ (<em>shitsuke</em>) Sustain</li>
+</ol>
+      <aside class="notes">
+  <ol>
+<li>data cleaning</li>
+<li>create a DAG</li>
+<li>Clean Code</li>
+<li>CI</li>
+<li>?</li>
+</ol>
+
+</aside>
+      </section>
+      </section>
+      <section data-nimib-slide-number="55" data-auto-animate >
+      <h3>Conclusions</h3>
+      </section>
+      <section data-nimib-slide-number="56" data-auto-animate >
+      <h3>Conclusions</h3>
+      <ul>
+<li><em>Domain</em>: a worthy and relatively untapped opportunity for Data Scientist</li>
+</ul>
+      </section>
+      <section data-nimib-slide-number="57" data-auto-animate >
+      <h3>Conclusions</h3>
+      <ul>
+<li><em>Domain</em>: a worthy and relatively untapped opportunity for Data Scientist</li>
+</ul>
+      <ul>
+<li>More <strong>complexity</strong> than you might expect</li>
+</ul>
+      </section>
+      <section data-nimib-slide-number="58" data-auto-animate >
+      <h3>Conclusions</h3>
+      <ul>
+<li><em>Domain</em>: a worthy and relatively untapped opportunity for Data Scientist</li>
+</ul>
+      <ul>
+<li>More <strong>complexity</strong> than you might expect</li>
+</ul>
+      <ul>
+<li>Inspired to learn and talk about your domain?</li>
+</ul>
+      </section>
+      <section data-nimib-slide-number="59" >
       <h1>🙏</h1>
       <small><p>🧑‍💻 <a href="https://github.com/pietroppeter">github.com/pietroppeter</a></p></small>
       <small><p>🦋 <a href="https://bsky.app/profile/pietroppeter.bsky.social">@pietroppeter.bsky.social</a></p></small>
