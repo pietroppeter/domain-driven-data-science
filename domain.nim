@@ -75,8 +75,11 @@ template domainDrivenDesign* =
 """
 
 template dataMesh* =
-  autoAnimateSlides(3):
-    nbText "## Data Mesh"
+  autoAnimateSlides(4):
+    showUntil(3):
+      nbText "## Data Mesh"
+    showAt(4):
+      nbText "## Data Architecture"
     columns:
       column:
         nbImage "images/data-mesh.png"
@@ -90,6 +93,9 @@ template dataMesh* =
   """
         showAt(3):
           nbImg("images/paolo.png", "200px")
+        showAt(4):
+          nbImage("images/podcast.png")
+          nbText "🎧 *podcast*"
     showAt(2):
       nbText "Our product: _witboost_ 🤝"
 
@@ -107,5 +113,5 @@ template all* =
 
 when isMainModule:
   myInit("domain.nim")
-  all
+  dataMesh
   nbSave
