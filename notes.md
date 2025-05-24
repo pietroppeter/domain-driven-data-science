@@ -1,3 +1,18 @@
+## pyconit
+
+### migrate to nobe
+
+ddds
+- agiletheme [x]
+- agile logo [x]
+- reference - use directly text_small [x]
+
+nobe
+- slide as context NO, new slide api [x]
+- small text [x]
+- speaker notes
+- autoanimate
+
 ## cleanup
 
 changes

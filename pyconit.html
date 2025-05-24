@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+
+    <!-- reveal CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/theme/black.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/highlight/monokai.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+
+<body>
+
+<style>
+:root {
+  --r-background-color: #FFF;
+  --r-heading-color: #0e1f53;
+  --r-link-color: #02A4BD;
+  --r-selection-color: #02A4BD;
+  --r-link-color-dark: darken(#02A4BD , 15%);
+  --r-main-color: #0e1f53;
+}
+
+.reveal ul, .reveal ol {
+  display: block;
+  text-align: left;
+}
+
+li {
+  padding-left: 12px;
+}
+.reveal strong {
+  color: #02A4BD;
+  font-style: normal;
+}
+
+.reveal em {
+    color: #ee961a;
+    font-style: normal;
+    font-weight: 700;
+}
+</style>
+
+<div id="agileLabLogo" style="background: url(./images/logo-agilelab.png);
+background-repeat: no-repeat;
+position: absolute;
+bottom: 0px;
+left: 10px;
+width: 250px;
+height: 70px;">
+</div>
+
+<div class="reveal">
+  <div class="slides">
+    
+<section>
+<h2>Domain-driven Data Science</h2>
+<p><strong>Pietro Peterlongo</strong></p>
+<p><em>PyCon Italy, May 2025</em></p>
+<small><p><a href="https://github.com/pietroppeter/domain-driven-data-science">github.com/pietroppeter/domain-driven-data-science</a></p></small>
+</section>
+
+
+<section>
+<h2>Agenda</h2>
+<ol>
+<li>Why domain is important? 🤹</li>
+<li>Logistics and Supply Chain 📦</li>
+<li>Stories and Ideas 💡</li>
+</ol>
+</section>
+
+  </div>
+</div>
+
+<!-- reveal JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/highlight/highlight.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/notes/notes.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/math/math.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+  Reveal.initialize({
+    plugins: [ 
+      RevealHighlight,
+      RevealNotes,
+      RevealMath.KaTeX,
+    ],
+  });
+</script>
+</body>
+</html>
