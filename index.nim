@@ -63,9 +63,9 @@ template meSlide* =
     showFrom(3):
       nbText "- 🏭🧑‍💻 DS@ToolsGroup [toolsgroup.com](toolsgroup.com)"
     showFrom(4):
-      nbText "- 🐙🗽 Recurse Center [recurse.com](recurse.com)"
-    showFrom(5):
       nbText "- 💙🧡 PyData Milan [milano.python.it](milano.python.it)"
+    showFrom(5):
+      nbText "- 🐙🗽 Recurse Center [recurse.com](recurse.com)"
     showFrom(6):
       nbText "- 🏄🧑‍💻 DS@AgileLab [handbook.agilelab.it](handbook.agilelab.it)"
     speakerNote """
