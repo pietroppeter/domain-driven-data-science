@@ -6,8 +6,8 @@
 - title slide [x]
 - me slide [x]
 - remove the RF vs XGB slide (yes I can!) [x]
-- data mesh (make it minimal and maybe on single slide with DDD? link to Data Mesh course)
-- update slides on forecasting with recent one at PyCon Lithuania
+- update slides on forecasting with recent one at PyCon Lithuania [x]
+- data mesh (make it minimal and maybe on single slide with DDD? link to Data Mesh course) [x]
 - add a agilelab slide (inspired by Gabriele)
 
 ### migrate to nobe

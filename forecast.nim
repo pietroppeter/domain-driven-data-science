@@ -9,8 +9,9 @@ template forecastSection* =
 template pymiTalkForecastingNixtla* =
   slide:
     nbText "### Forecasting with Nixtla"
-    nbImage "images/talk-pymi-forecasting.png"
+    nbRawHtml """<img src="images/talk-pymi-forecasting.png" alt="" height="300px">"""
     reference "[github.com/pietroppeter/pymi-timeseries-forecasting-nixtla](https://github.com/pietroppeter/pymi-timeseries-forecasting-nixtla)"
+    reference "updated talk from [PyCon Lithuania 2025](https://pretalx.com/pycon-lithuania-2025/talk/NKFV38/) (to be published)"
 
 template modelling* =
   slide:

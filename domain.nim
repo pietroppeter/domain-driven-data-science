@@ -75,29 +75,19 @@ template domainDrivenDesign* =
 """
 
 template dataMesh* =
-  autoAnimateSlides(4):
-    showUntil(3):
-      nbText "## Data Mesh"
-    showAt(4):
-      nbText "## Data Architecture"
+  slide:
+    nbText "## Data Mesh"
     columns:
       column:
-        nbImage "images/data-mesh.png"
-      column:
-        showUntil(2):
-          nbText "⠀"
-          nbText """
-  - DDD for Big Data
-  - *Data Product*
+        nbText """
+  - Domain-Driven Design applied to Data Governance
+  - *Data Product* as a central concept
   - [agilelab.it/blog](https://www.agilelab.it/blog)
   """
-        showAt(3):
-          nbImg("images/paolo.png", "200px")
-        showAt(4):
-          nbImage("images/podcast.png")
-          nbText "🎧 *podcast*"
-    showAt(2):
-      nbText "Our product: _witboost_ 🤝"
+        reference "[1h free course on udemy](https://www.udemy.com/course/data-mesh-101-by-agile-lab/) 👉"
+      column:
+        nbImage "images/datamesh-udemy.png"
+
 
 template subSectionInspiration* =
   slide nbText "# Inspiration 💡"
