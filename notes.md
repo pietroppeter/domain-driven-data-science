@@ -5,9 +5,9 @@
 - move pydat-nyc in its own folder [x]
 - title slide [x]
 - me slide [x]
+- remove the RF vs XGB slide (yes I can!) [x]
 - data mesh (make it minimal and maybe on single slide with DDD? link to Data Mesh course)
 - update slides on forecasting with recent one at PyCon Lithuania
-- remove the RF vs XGB slide
 - add a agilelab slide (inspired by Gabriele)
 
 ### migrate to nobe

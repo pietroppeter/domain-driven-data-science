@@ -200,7 +200,6 @@ template all* =
   rulesML
   talkToExperts
   documentDomain
-  randomForestVSXgboost
   learnTheDomain
   inspiredByDomain
 
