@@ -10,7 +10,7 @@ template titleSlide* =
 
 **Pietro Peterlongo**
 
-*PyData NYC, Nov 8 2024*
+*PyCon Italy, May 29 2024*
 
 """
     reference "[github.com/pietroppeter/domain-driven-data-science](https://github.com/pietroppeter/domain-driven-data-science)"
@@ -56,17 +56,15 @@ since I want to hear more of them
 
 template meSlide* =
   # todo: make it appear one by one
-  autoAnimateSlides(6):
+  autoAnimateSlides(5):
     nbText "### 👋 Pietro (he/him) 👨‍👩‍👧🇮🇹🍝🏔️⛵️🎭"
     showFrom(2):
       nbText "- 🧮👨‍🔬 (Applied) Math"
     showFrom(3):
-      nbText "- 🏭🧑‍💻 DS@ToolsGroup [toolsgroup.com](toolsgroup.com)"
+      nbText "- 🏭🧑‍💻 (previously) DS@ToolsGroup [toolsgroup.com](toolsgroup.com)"
     showFrom(4):
-      nbText "- 💙🧡 PyData Milan [milano.python.it](milano.python.it)"
+      nbText "- 💛💙🧡 Python/PyData Milan [milano.python.it](milano.python.it)"
     showFrom(5):
-      nbText "- 🐙🗽 Recurse Center [recurse.com](recurse.com)"
-    showFrom(6):
       nbText "- 🏄🧑‍💻 DS@AgileLab [handbook.agilelab.it](handbook.agilelab.it)"
     speakerNote """
 - Hi I am Pietro and these are my emojis...

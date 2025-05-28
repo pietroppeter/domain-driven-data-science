@@ -1,5 +1,15 @@
 ## pyconit
 
+## minimal todo to update
+
+- move pydat-nyc in its own folder [x]
+- title slide [x]
+- me slide [x]
+- data mesh (make it minimal and maybe on single slide with DDD? link to Data Mesh course)
+- update slides on forecasting with recent one at PyCon Lithuania
+- remove the RF vs XGB slide
+- add a agilelab slide (inspired by Gabriele)
+
 ### migrate to nobe
 
 ddds
@@ -10,8 +20,13 @@ ddds
 nobe
 - slide as context NO, new slide api [x]
 - small text [x]
+- slide inside slides (vertical slides)
 - speaker notes
 - autoanimate
+- columns
+- containers api?
+
+will not do it yet!
 
 ## cleanup
 
