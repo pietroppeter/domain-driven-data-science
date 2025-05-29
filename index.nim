@@ -114,6 +114,18 @@ template pyconit* =
     nbText "⠀"
     nbText "⠀"
 
+template agilelab* =
+  slide:
+    reference "Our Public handbook 📘 [handbook.agilelab.it](handbook.agilelab.it) documents how we work and some of the perks, including:"
+    columns:
+      column:
+        nbImage "images/hola.png"
+        reference "Self-management system (Holacracy)"
+      column:
+        nbImage "images/nomads.png"
+        reference "Agile Nomads (work 2 weeks from Canary Islands)"
+
+
 template presentation* =
   titleSlide
   agendaSlide
@@ -129,7 +141,8 @@ template presentation* =
     stories.all
   conclusions
   thanks
-  pyconit
+  #pyconit
+  agilelab
 
 
 when isMainModule:
