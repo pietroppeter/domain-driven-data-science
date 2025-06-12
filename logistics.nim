@@ -2,7 +2,9 @@ import nimib, nimislides
 import my
 
 template sectionSlide* =
-  slide nbText "# 2. Logistics & Supply Chain 🚚"
+  slide:
+    nbText "# 2. Logistics & Supply Chain 🚚"
+    speakerNote "< 7'?"
 
 template whatLogistic* =
   slide:

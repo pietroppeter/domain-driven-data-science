@@ -2,7 +2,9 @@ import nimib, nimislides
 import my
 
 template sectionSlide* =
-  slide nbText "# 1. Domain 🤹"
+  slide:
+    nbText "# 1. Domain 🤹"
+    speakerNote "< 2'?"
 
 template successProjects* =
   autoAnimateSlides(2):
@@ -39,6 +41,11 @@ template vennDiagram* =
   slide:
     nbImg("images/venn2.png", width="500px")
     reference "[Data Science Venn Diagram, Drew Conway, 2010](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram)"
+    speakerNote """
+- when I started in DS, it was not at all evident what a DS should do (maybe it is still not clear)
+- a driving methaphor back in the days was the DS Venn Diagram which tells you that a DSist should have
+- a math/stats background, skills in writing code and some domain knowledge sprinkled on top
+"""
 
 template memeContent* =
   autoAnimateSlides(4):
@@ -59,6 +66,12 @@ template memeContent* =
         showFrom(4):
           nbRawHtml """<iframe src="https://giphy.com/embed/GTcGizhnF7wo2F74qP" width="480" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/GTcGizhnF7wo2F74qP">via GIPHY</a></p>"""
         # john travolta
+    speakerNote """
+- so you guide and find a lot of cool content about the math and stats part and you learn that
+- you also learn how to use the libraries most in demand
+- then you start on a project on a specific domain, and the content starts lacking both in quantity and quality,
+or at least this is my impression and part of the motivation to do this talk
+"""
 
 template domainDrivenDesign* =
   slide:

@@ -10,13 +10,17 @@ template titleSlide* =
 
 **Pietro Peterlongo**
 
-*PyCon Italy, May 29 2024*
+*PyCon Italy, Bologna,  May 29 2025*
 
 """
     reference "[github.com/pietroppeter/domain-driven-data-science](https://github.com/pietroppeter/domain-driven-data-science)"
-# add name and event?
-# hint at some stuff I will say in next slides? (start introducing )
-# a talk about why I think domain expertise is important for Data Scientists, where it matters
+    speakerNote """
+Hi, I want to talk about why I think that
+the role of domain expertise in data science is important
+and possibly convince you that is worth investing more effort in learning about your domain
+
+slides are on github
+"""
 
 template agendaSlide* = 
   autoAnimateSlides(2):
@@ -38,49 +42,31 @@ template agendaSlide* =
 3. Stories and Ideas 💡
 """
     speakerNote """
-- (1) problem and opportunity
-- (2) the domain I know best
-- (3) give hints
-- mention appendix on DDD/Data Mesh? or it is part one
+- In the first part of the talk I will introduce the domain topic and argue on it importance
+- next I will share a quick intro to the domain I know best, Logistics & SC
+- finally I will go over a number of somehow disconnected stories and ideas
+  on how to make your Data Science practice more domain-driven
+- I will also share how a particular technical and general topic, Forecasting, can be shaped by the domain it applies to
 
-The aim is to:
-- highlight why this is important and undervalued and underexplored
-- teach you something about a specific domain
-- give some examples of where domain thinking might help
-  (and maybe we do it unconsciounsly)
-- also trying to be a but more systematic and conscious about the domain component of our work
-
-ultimate hope is to contribute to stimulate more talks about domain issues,
-since I want to hear more of them
 """
 
 template meSlide* =
   # todo: make it appear one by one
-  autoAnimateSlides(5):
+  autoAnimateSlides(2):
     nbText "### 👋 Pietro (he/him) 👨‍👩‍👧🇮🇹🍝🏔️⛵️🎭"
     showFrom(2):
       nbText "- 🧮👨‍🔬 (Applied) Math"
-    showFrom(3):
       nbText "- 🏭🧑‍💻 (previously) DS@ToolsGroup [toolsgroup.com](toolsgroup.com)"
-    showFrom(4):
       nbText "- 💛💙🧡 Python/PyData Milan [milano.python.it](milano.python.it)"
-    showFrom(5):
       nbText "- 🏄🧑‍💻 DS@AgileLab [handbook.agilelab.it](handbook.agilelab.it)"
     speakerNote """
 - Hi I am Pietro and these are my emojis...
-- (math) dynamical systems, weather and climate as my first domain (research), later cryptography
-- ToolsGroup, 9 years, 200-300 international, 30 yrs old
-- (break)
-- AgileLab, <1yr, 150-200 consulting in 10 yrs
-
-Motivation for this part is:
-- in part credibility in what I say
-- but a lot also to put into context of what I say
-- and to be clear about limitations about what I say
-- (it may or not apply to your case)
-
-My hope in general is that more people do talks about domain expertise
-so that we can learn from multiple point of views
+- my background is in math and a piece of trivia I cannot resits sharing being here in Bologna
+  is that my great grandmother also graduated in Math here more than a century ago
+- I have worked for almost 9 years in a company that sells a Supply Chain Planning and Optimization software,
+  and that is where my domain background comes from
+- I am part of Python Milan organizer, if you want to get in touch and come as a speaker let us now
+- finally I have been working in the last year in AgileLab, a very interesting place for Data people, more on that later
 """
 
 template conclusions* =
@@ -116,15 +102,15 @@ template pyconit* =
 
 template agilelab* =
   slide:
-    reference "Our Public handbook 📘 [handbook.agilelab.it](handbook.agilelab.it) documents how we work and some of the perks, including:"
+    reference "We have a Public handbook 📘 [handbook.agilelab.it](handbook.agilelab.it)"
     columns:
       column:
-        nbImage "images/hola.png"
         reference "Self-management system (Holacracy)"
+        nbImage "images/hola.png"
       column:
-        nbImage "images/nomads.png"
         reference "Agile Nomads (work 2 weeks from Canary Islands)"
-
+        nbImage "images/nomads.png"
+    reference "we are hiring [careers.agilelab.it](careers.agilelab.it)"
 
 template presentation* =
   titleSlide
@@ -149,3 +135,16 @@ when isMainModule:
   myInit("index.nim")
   presentation
   nbSave
+
+
+#[
+for 
+timings:
+- 2' intro 3 (title, agenda, me)
+- 5' domain 5 = 3+2 (venn diagram, no content, **success** + inspiration DDD and Data Mesh)
+- 10' max logistics 7 (what, storage + transporation, automation, SC, planning, uncertainit, constraints)
+- 10' max forecast 5 (modelling, algorithm, evaluation, problems, nixtla talk)
+- 10' max stories 7 (trust, data generating process, no ML rule, experts, document, learn, inspired)
+- 1' closing 3 (conclusions, thanks, agilelab)
+(38')
+]#

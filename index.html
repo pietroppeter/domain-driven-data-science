@@ -46,8 +46,15 @@ li {
       <section data-nimib-slide-number="1" >
       <h2>Domain-driven Data Science</h2>
 <p><strong>Pietro Peterlongo</strong></p>
-<p><em>PyCon Italy, May 29 2024</em></p>
+<p><em>PyCon Italy, Bologna,  May 29 2025</em></p>
       <small><p><a href="https://github.com/pietroppeter/domain-driven-data-science">github.com/pietroppeter/domain-driven-data-science</a></p></small>
+      <aside class="notes">
+  <p>Hi, I want to talk about why I think that
+the role of domain expertise in data science is important
+and possibly convince you that is worth investing more effort in learning about your domain</p>
+<p>slides are on github</p>
+
+</aside>
       </section>
       <section data-nimib-slide-number="2" data-auto-animate >
       <h2>Agenda</h2>
@@ -58,21 +65,12 @@ li {
 </ol>
       <aside class="notes">
   <ul>
-<li>(1) problem and opportunity</li>
-<li>(2) the domain I know best</li>
-<li>(3) give hints</li>
-<li>mention appendix on DDD/Data Mesh? or it is part one</li>
+<li>In the first part of the talk I will introduce the domain topic and argue on it importance</li>
+<li>next I will share a quick intro to the domain I know best, Logistics &amp; SC</li>
+<li>finally I will go over a number of somehow disconnected stories and ideas
+on how to make your Data Science practice more domain-driven</li>
+<li>I will also share how a particular technical and general topic, Forecasting, can be shaped by the domain it applies to</li>
 </ul>
-<p>The aim is to:</p>
-<ul>
-<li>highlight why this is important and undervalued and underexplored</li>
-<li>teach you something about a specific domain</li>
-<li>give some examples of where domain thinking might help
-(and maybe we do it unconsciounsly)</li>
-<li>also trying to be a but more systematic and conscious about the domain component of our work</li>
-</ul>
-<p>ultimate hope is to contribute to stimulate more talks about domain issues,
-since I want to hear more of them</p>
 
 </aside>
       </section>
@@ -90,21 +88,12 @@ since I want to hear more of them</p>
 </ol>
       <aside class="notes">
   <ul>
-<li>(1) problem and opportunity</li>
-<li>(2) the domain I know best</li>
-<li>(3) give hints</li>
-<li>mention appendix on DDD/Data Mesh? or it is part one</li>
+<li>In the first part of the talk I will introduce the domain topic and argue on it importance</li>
+<li>next I will share a quick intro to the domain I know best, Logistics &amp; SC</li>
+<li>finally I will go over a number of somehow disconnected stories and ideas
+on how to make your Data Science practice more domain-driven</li>
+<li>I will also share how a particular technical and general topic, Forecasting, can be shaped by the domain it applies to</li>
 </ul>
-<p>The aim is to:</p>
-<ul>
-<li>highlight why this is important and undervalued and underexplored</li>
-<li>teach you something about a specific domain</li>
-<li>give some examples of where domain thinking might help
-(and maybe we do it unconsciounsly)</li>
-<li>also trying to be a but more systematic and conscious about the domain component of our work</li>
-</ul>
-<p>ultimate hope is to contribute to stimulate more talks about domain issues,
-since I want to hear more of them</p>
 
 </aside>
       </section>
@@ -113,108 +102,17 @@ since I want to hear more of them</p>
       <aside class="notes">
   <ul>
 <li>Hi I am Pietro and these are my emojis...</li>
-<li>(math) dynamical systems, weather and climate as my first domain (research), later cryptography</li>
-<li>ToolsGroup, 9 years, 200-300 international, 30 yrs old</li>
-<li>(break)</li>
-<li>AgileLab, &lt;1yr, 150-200 consulting in 10 yrs</li>
+<li>my background is in math and a piece of trivia I cannot resits sharing being here in Bologna
+is that my great grandmother also graduated in Math here more than a century ago</li>
+<li>I have worked for almost 9 years in a company that sells a Supply Chain Planning and Optimization software,
+and that is where my domain background comes from</li>
+<li>I am part of Python Milan organizer, if you want to get in touch and come as a speaker let us now</li>
+<li>finally I have been working in the last year in AgileLab, a very interesting place for Data people, more on that later</li>
 </ul>
-<p>Motivation for this part is:</p>
-<ul>
-<li>in part credibility in what I say</li>
-<li>but a lot also to put into context of what I say</li>
-<li>and to be clear about limitations about what I say</li>
-<li>(it may or not apply to your case)</li>
-</ul>
-<p>My hope in general is that more people do talks about domain expertise
-so that we can learn from multiple point of views</p>
 
 </aside>
       </section>
       <section data-nimib-slide-number="5" data-auto-animate >
-      <h3>👋 Pietro (he/him) 👨‍👩‍👧🇮🇹🍝🏔️⛵️🎭</h3>
-      <ul>
-<li>🧮👨‍🔬 (Applied) Math</li>
-</ul>
-      <aside class="notes">
-  <ul>
-<li>Hi I am Pietro and these are my emojis...</li>
-<li>(math) dynamical systems, weather and climate as my first domain (research), later cryptography</li>
-<li>ToolsGroup, 9 years, 200-300 international, 30 yrs old</li>
-<li>(break)</li>
-<li>AgileLab, &lt;1yr, 150-200 consulting in 10 yrs</li>
-</ul>
-<p>Motivation for this part is:</p>
-<ul>
-<li>in part credibility in what I say</li>
-<li>but a lot also to put into context of what I say</li>
-<li>and to be clear about limitations about what I say</li>
-<li>(it may or not apply to your case)</li>
-</ul>
-<p>My hope in general is that more people do talks about domain expertise
-so that we can learn from multiple point of views</p>
-
-</aside>
-      </section>
-      <section data-nimib-slide-number="6" data-auto-animate >
-      <h3>👋 Pietro (he/him) 👨‍👩‍👧🇮🇹🍝🏔️⛵️🎭</h3>
-      <ul>
-<li>🧮👨‍🔬 (Applied) Math</li>
-</ul>
-      <ul>
-<li>🏭🧑‍💻 (previously) DS@ToolsGroup <a href="toolsgroup.com">toolsgroup.com</a></li>
-</ul>
-      <aside class="notes">
-  <ul>
-<li>Hi I am Pietro and these are my emojis...</li>
-<li>(math) dynamical systems, weather and climate as my first domain (research), later cryptography</li>
-<li>ToolsGroup, 9 years, 200-300 international, 30 yrs old</li>
-<li>(break)</li>
-<li>AgileLab, &lt;1yr, 150-200 consulting in 10 yrs</li>
-</ul>
-<p>Motivation for this part is:</p>
-<ul>
-<li>in part credibility in what I say</li>
-<li>but a lot also to put into context of what I say</li>
-<li>and to be clear about limitations about what I say</li>
-<li>(it may or not apply to your case)</li>
-</ul>
-<p>My hope in general is that more people do talks about domain expertise
-so that we can learn from multiple point of views</p>
-
-</aside>
-      </section>
-      <section data-nimib-slide-number="7" data-auto-animate >
-      <h3>👋 Pietro (he/him) 👨‍👩‍👧🇮🇹🍝🏔️⛵️🎭</h3>
-      <ul>
-<li>🧮👨‍🔬 (Applied) Math</li>
-</ul>
-      <ul>
-<li>🏭🧑‍💻 (previously) DS@ToolsGroup <a href="toolsgroup.com">toolsgroup.com</a></li>
-</ul>
-      <ul>
-<li>💛💙🧡 Python/PyData Milan <a href="milano.python.it">milano.python.it</a></li>
-</ul>
-      <aside class="notes">
-  <ul>
-<li>Hi I am Pietro and these are my emojis...</li>
-<li>(math) dynamical systems, weather and climate as my first domain (research), later cryptography</li>
-<li>ToolsGroup, 9 years, 200-300 international, 30 yrs old</li>
-<li>(break)</li>
-<li>AgileLab, &lt;1yr, 150-200 consulting in 10 yrs</li>
-</ul>
-<p>Motivation for this part is:</p>
-<ul>
-<li>in part credibility in what I say</li>
-<li>but a lot also to put into context of what I say</li>
-<li>and to be clear about limitations about what I say</li>
-<li>(it may or not apply to your case)</li>
-</ul>
-<p>My hope in general is that more people do talks about domain expertise
-so that we can learn from multiple point of views</p>
-
-</aside>
-      </section>
-      <section data-nimib-slide-number="8" data-auto-animate >
       <h3>👋 Pietro (he/him) 👨‍👩‍👧🇮🇹🍝🏔️⛵️🎭</h3>
       <ul>
 <li>🧮👨‍🔬 (Applied) Math</li>
@@ -231,35 +129,40 @@ so that we can learn from multiple point of views</p>
       <aside class="notes">
   <ul>
 <li>Hi I am Pietro and these are my emojis...</li>
-<li>(math) dynamical systems, weather and climate as my first domain (research), later cryptography</li>
-<li>ToolsGroup, 9 years, 200-300 international, 30 yrs old</li>
-<li>(break)</li>
-<li>AgileLab, &lt;1yr, 150-200 consulting in 10 yrs</li>
+<li>my background is in math and a piece of trivia I cannot resits sharing being here in Bologna
+is that my great grandmother also graduated in Math here more than a century ago</li>
+<li>I have worked for almost 9 years in a company that sells a Supply Chain Planning and Optimization software,
+and that is where my domain background comes from</li>
+<li>I am part of Python Milan organizer, if you want to get in touch and come as a speaker let us now</li>
+<li>finally I have been working in the last year in AgileLab, a very interesting place for Data people, more on that later</li>
 </ul>
-<p>Motivation for this part is:</p>
-<ul>
-<li>in part credibility in what I say</li>
-<li>but a lot also to put into context of what I say</li>
-<li>and to be clear about limitations about what I say</li>
-<li>(it may or not apply to your case)</li>
-</ul>
-<p>My hope in general is that more people do talks about domain expertise
-so that we can learn from multiple point of views</p>
 
 </aside>
       </section>
-      <section data-nimib-slide-number="9" >
-      <section data-nimib-slide-number="10" >
+      <section data-nimib-slide-number="6" >
+      <section data-nimib-slide-number="7" >
       <h1>1. Domain 🤹</h1>
+      <aside class="notes">
+  <p>&lt; 2'?</p>
+
+</aside>
       </section>
-      <section data-nimib-slide-number="11" >
+      <section data-nimib-slide-number="8" >
       <figure>
 <img src="images/venn2.png" alt="" width="500px">
 <figcaption></figcaption>
 </figure>
       <small><p><a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram">Data Science Venn Diagram, Drew Conway, 2010</a></p></small>
+      <aside class="notes">
+  <ul>
+<li>when I started in DS, it was not at all evident what a DS should do (maybe it is still not clear)</li>
+<li>a driving methaphor back in the days was the DS Venn Diagram which tells you that a DSist should have</li>
+<li>a math/stats background, skills in writing code and some domain knowledge sprinkled on top</li>
+</ul>
+
+</aside>
       </section>
-      <section data-nimib-slide-number="12" data-auto-animate >
+      <section data-nimib-slide-number="9" data-auto-animate >
       <h3>📚 Content Production</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -273,8 +176,17 @@ so that we can learn from multiple point of views</p>
       <p>🚚 <em>Domain</em></p>
       </div>
       </div>
+      <aside class="notes">
+  <ul>
+<li>so you guide and find a lot of cool content about the math and stats part and you learn that</li>
+<li>you also learn how to use the libraries most in demand</li>
+<li>then you start on a project on a specific domain, and the content starts lacking both in quantity and quality,
+or at least this is my impression and part of the motivation to do this talk</li>
+</ul>
+
+</aside>
       </section>
-      <section data-nimib-slide-number="13" data-auto-animate >
+      <section data-nimib-slide-number="10" data-auto-animate >
       <h3>📚 Content Production</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -292,8 +204,17 @@ so that we can learn from multiple point of views</p>
       <p>🚚 <em>Domain</em></p>
       </div>
       </div>
+      <aside class="notes">
+  <ul>
+<li>so you guide and find a lot of cool content about the math and stats part and you learn that</li>
+<li>you also learn how to use the libraries most in demand</li>
+<li>then you start on a project on a specific domain, and the content starts lacking both in quantity and quality,
+or at least this is my impression and part of the motivation to do this talk</li>
+</ul>
+
+</aside>
       </section>
-      <section data-nimib-slide-number="14" data-auto-animate >
+      <section data-nimib-slide-number="11" data-auto-animate >
       <h3>📚 Content Production</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -315,8 +236,17 @@ so that we can learn from multiple point of views</p>
       <p>🚚 <em>Domain</em></p>
       </div>
       </div>
+      <aside class="notes">
+  <ul>
+<li>so you guide and find a lot of cool content about the math and stats part and you learn that</li>
+<li>you also learn how to use the libraries most in demand</li>
+<li>then you start on a project on a specific domain, and the content starts lacking both in quantity and quality,
+or at least this is my impression and part of the motivation to do this talk</li>
+</ul>
+
+</aside>
       </section>
-      <section data-nimib-slide-number="15" data-auto-animate >
+      <section data-nimib-slide-number="12" data-auto-animate >
       <h3>📚 Content Production</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -339,8 +269,17 @@ so that we can learn from multiple point of views</p>
       <iframe src="https://giphy.com/embed/GTcGizhnF7wo2F74qP" width="480" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/GTcGizhnF7wo2F74qP">via GIPHY</a></p>
       </div>
       </div>
+      <aside class="notes">
+  <ul>
+<li>so you guide and find a lot of cool content about the math and stats part and you learn that</li>
+<li>you also learn how to use the libraries most in demand</li>
+<li>then you start on a project on a specific domain, and the content starts lacking both in quantity and quality,
+or at least this is my impression and part of the motivation to do this talk</li>
+</ul>
+
+</aside>
       </section>
-      <section data-nimib-slide-number="16" data-auto-animate >
+      <section data-nimib-slide-number="13" data-auto-animate >
       <h3>Success of DS/ML/AI Projects</h3>
       <p><strong>Technology</strong></p>
       <ul>
@@ -356,7 +295,7 @@ so that we can learn from multiple point of views</p>
 
 </aside>
       </section>
-      <section data-nimib-slide-number="17" data-auto-animate >
+      <section data-nimib-slide-number="14" data-auto-animate >
       <h3>Success of DS/ML/AI Projects</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -385,10 +324,10 @@ so that we can learn from multiple point of views</p>
 
 </aside>
       </section>
-      <section data-nimib-slide-number="18" >
+      <section data-nimib-slide-number="15" >
       <h1>Inspiration 💡</h1>
       </section>
-      <section data-nimib-slide-number="19" >
+      <section data-nimib-slide-number="16" >
       <h2>Domain Driven Design</h2>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -408,7 +347,7 @@ so that we can learn from multiple point of views</p>
       </div>
       </div>
       </section>
-      <section data-nimib-slide-number="20" >
+      <section data-nimib-slide-number="17" >
       <h2>Data Mesh</h2>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -429,11 +368,15 @@ so that we can learn from multiple point of views</p>
       </div>
       </section>
       </section>
-      <section data-nimib-slide-number="21" >
-      <section data-nimib-slide-number="22" >
+      <section data-nimib-slide-number="18" >
+      <section data-nimib-slide-number="19" >
       <h1>2. Logistics &amp; Supply Chain 🚚</h1>
+      <aside class="notes">
+  <p>&lt; 7'?</p>
+
+</aside>
       </section>
-      <section data-nimib-slide-number="23" >
+      <section data-nimib-slide-number="20" >
       <h3>What is Logistics?</h3>
       <figure>
 <img src="images/logistics.png" alt="">
@@ -458,7 +401,7 @@ that current and future profitability are maximised through the cost-effective f
 
 </aside>
       </section>
-      <section data-nimib-slide-number="24" >
+      <section data-nimib-slide-number="21" >
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
       <div>
@@ -477,14 +420,14 @@ that current and future profitability are maximised through the cost-effective f
       </div>
       </div>
       </section>
-      <section data-nimib-slide-number="25" >
+      <section data-nimib-slide-number="22" >
       <h3>Automation</h3>
       <figure>
 <img src="images/automation.png" alt="">
 <figcaption></figcaption>
 </figure>
       </section>
-      <section data-nimib-slide-number="26" data-auto-animate >
+      <section data-nimib-slide-number="23" data-auto-animate >
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
       <div>
@@ -505,7 +448,7 @@ that current and future profitability are maximised through the cost-effective f
 
 </aside>
       </section>
-      <section data-nimib-slide-number="27" data-auto-animate >
+      <section data-nimib-slide-number="24" data-auto-animate >
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
       <div>
@@ -532,10 +475,10 @@ that current and future profitability are maximised through the cost-effective f
 
 </aside>
       </section>
-      <section data-nimib-slide-number="28" data-auto-animate >
+      <section data-nimib-slide-number="25" data-auto-animate >
       <h3>Planning</h3>
       </section>
-      <section data-nimib-slide-number="29" data-auto-animate >
+      <section data-nimib-slide-number="26" data-auto-animate >
       <h3>Planning</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -550,7 +493,7 @@ that current and future profitability are maximised through the cost-effective f
       </div>
       </div>
       </section>
-      <section data-nimib-slide-number="30" data-auto-animate >
+      <section data-nimib-slide-number="27" data-auto-animate >
       <h3>Planning</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -569,7 +512,7 @@ that current and future profitability are maximised through the cost-effective f
       </div>
       </div>
       </section>
-      <section data-nimib-slide-number="31" data-auto-animate >
+      <section data-nimib-slide-number="28" data-auto-animate >
       <h3>Planning</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -592,7 +535,7 @@ that current and future profitability are maximised through the cost-effective f
       </div>
       </div>
       </section>
-      <section data-nimib-slide-number="32" data-auto-animate >
+      <section data-nimib-slide-number="29" data-auto-animate >
       <h3>Planning</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -619,11 +562,11 @@ that current and future profitability are maximised through the cost-effective f
       </div>
       </div>
       </section>
-      <section data-nimib-slide-number="33" data-auto-animate >
+      <section data-nimib-slide-number="30" data-auto-animate >
       <h3>Uncertainity</h3>
       <p>Demand is uncertain, Supply is uncertain</p>
       </section>
-      <section data-nimib-slide-number="34" data-auto-animate >
+      <section data-nimib-slide-number="31" data-auto-animate >
       <h3>Uncertainity</h3>
       <p>Demand is uncertain, Supply is uncertain</p>
       <h4><em>Lead Time</em></h4>
@@ -632,7 +575,7 @@ that current and future profitability are maximised through the cost-effective f
 <figcaption></figcaption>
 </figure>
       </section>
-      <section data-nimib-slide-number="35" data-auto-animate >
+      <section data-nimib-slide-number="32" data-auto-animate >
       <h3>Uncertainity</h3>
       <p>Demand is uncertain, Supply is uncertain</p>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
@@ -653,10 +596,10 @@ that current and future profitability are maximised through the cost-effective f
       </div>
       </div>
       </section>
-      <section data-nimib-slide-number="36" data-auto-animate >
+      <section data-nimib-slide-number="33" data-auto-animate >
       <h3>Constraints</h3>
       </section>
-      <section data-nimib-slide-number="37" data-auto-animate >
+      <section data-nimib-slide-number="34" data-auto-animate >
       <h3>Constraints</h3>
       <ul>
 <li><strong>capacity</strong>: production, budget, storage, time</li>
@@ -664,7 +607,7 @@ that current and future profitability are maximised through the cost-effective f
 <li><strong>feasibility</strong>: schedules, opening hours</li>
 </ul>
       </section>
-      <section data-nimib-slide-number="38" data-auto-animate >
+      <section data-nimib-slide-number="35" data-auto-animate >
       <h3>Constraints</h3>
       <ul>
 <li><strong>capacity</strong>: production, budget, storage, time</li>
@@ -674,11 +617,11 @@ that current and future profitability are maximised through the cost-effective f
       <p>Optimization techniques (<em>Operations Research</em>)</p>
       </section>
       </section>
-      <section data-nimib-slide-number="39" >
-      <section data-nimib-slide-number="40" >
+      <section data-nimib-slide-number="36" >
+      <section data-nimib-slide-number="37" >
       <h1>2.1 Forecasting 🔮</h1>
       </section>
-      <section data-nimib-slide-number="41" >
+      <section data-nimib-slide-number="38" >
       <h3>Modelling</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -707,7 +650,7 @@ that current and future profitability are maximised through the cost-effective f
 
 </aside>
       </section>
-      <section data-nimib-slide-number="42" data-auto-animate >
+      <section data-nimib-slide-number="39" data-auto-animate >
       <h3>Algorithms</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -728,7 +671,7 @@ that current and future profitability are maximised through the cost-effective f
 
 </aside>
       </section>
-      <section data-nimib-slide-number="43" data-auto-animate >
+      <section data-nimib-slide-number="40" data-auto-animate >
       <h3>Algorithms</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -755,7 +698,7 @@ that current and future profitability are maximised through the cost-effective f
 
 </aside>
       </section>
-      <section data-nimib-slide-number="44" data-auto-animate >
+      <section data-nimib-slide-number="41" data-auto-animate >
       <h3>Evaluation</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -776,7 +719,7 @@ that current and future profitability are maximised through the cost-effective f
   
 </aside>
       </section>
-      <section data-nimib-slide-number="45" data-auto-animate >
+      <section data-nimib-slide-number="42" data-auto-animate >
       <h3>Evaluation</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -806,7 +749,7 @@ that current and future profitability are maximised through the cost-effective f
   
 </aside>
       </section>
-      <section data-nimib-slide-number="46" data-auto-animate >
+      <section data-nimib-slide-number="43" data-auto-animate >
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
       <div>
@@ -820,7 +763,7 @@ that current and future profitability are maximised through the cost-effective f
       </div>
       </div>
       </section>
-      <section data-nimib-slide-number="47" data-auto-animate >
+      <section data-nimib-slide-number="44" data-auto-animate >
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
       <div>
@@ -838,7 +781,7 @@ that current and future profitability are maximised through the cost-effective f
       </div>
       </div>
       </section>
-      <section data-nimib-slide-number="48" data-auto-animate >
+      <section data-nimib-slide-number="45" data-auto-animate >
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
       <div>
@@ -860,7 +803,7 @@ that current and future profitability are maximised through the cost-effective f
       </div>
       </div>
       </section>
-      <section data-nimib-slide-number="49" data-auto-animate >
+      <section data-nimib-slide-number="46" data-auto-animate >
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
       <div>
@@ -886,18 +829,18 @@ that current and future profitability are maximised through the cost-effective f
       </div>
       </div>
       </section>
-      <section data-nimib-slide-number="50" >
+      <section data-nimib-slide-number="47" >
       <h3>Forecasting with Nixtla</h3>
       <img src="images/talk-pymi-forecasting.png" alt="" height="300px">
       <small><p><a href="https://github.com/pietroppeter/pymi-timeseries-forecasting-nixtla">github.com/pietroppeter/pymi-timeseries-forecasting-nixtla</a></p></small>
       <small><p>updated talk from <a href="https://pretalx.com/pycon-lithuania-2025/talk/NKFV38/">PyCon Lithuania 2025</a> (to be published)</p></small>
       </section>
       </section>
-      <section data-nimib-slide-number="51" >
-      <section data-nimib-slide-number="52" >
+      <section data-nimib-slide-number="48" >
+      <section data-nimib-slide-number="49" >
       <h1>3. Stories 💡</h1>
       </section>
-      <section data-nimib-slide-number="53" >
+      <section data-nimib-slide-number="50" >
       <h3>🔮 Trust in the model</h3>
 <p>Story: a model for forecast of New Product sales</p>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
@@ -928,7 +871,7 @@ that current and future profitability are maximised through the cost-effective f
 
 </aside>
       </section>
-      <section data-nimib-slide-number="54" data-auto-animate >
+      <section data-nimib-slide-number="51" data-auto-animate >
       <h3>🏗️ Data Generating Process</h3>
 <p>Story: Data Exploration of Warehouse data</p>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
@@ -956,7 +899,7 @@ that current and future profitability are maximised through the cost-effective f
 
 </aside>
       </section>
-      <section data-nimib-slide-number="55" data-auto-animate >
+      <section data-nimib-slide-number="52" data-auto-animate >
       <h3>🏗️ Data Generating Process</h3>
 <p>Story: Data Exploration of Warehouse data</p>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
@@ -984,7 +927,7 @@ that current and future profitability are maximised through the cost-effective f
 
 </aside>
       </section>
-      <section data-nimib-slide-number="56" >
+      <section data-nimib-slide-number="53" >
       <h3>Rules of ML</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -1014,7 +957,7 @@ that current and future profitability are maximised through the cost-effective f
 
 </aside>
       </section>
-      <section data-nimib-slide-number="57" >
+      <section data-nimib-slide-number="54" >
       <h3>Talk to experts</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -1040,21 +983,21 @@ tool that shows data and visualization.</p>
 
 </aside>
       </section>
-      <section data-nimib-slide-number="58" data-auto-animate >
+      <section data-nimib-slide-number="55" data-auto-animate >
       <h3>Document the domain</h3>
       </section>
-      <section data-nimib-slide-number="59" data-auto-animate >
+      <section data-nimib-slide-number="56" data-auto-animate >
       <h3>Document the domain</h3>
       <p>e.g. <strong>Business</strong>, <em>Domain</em> and <strong>Data</strong> essentials in README</p>
       </section>
-      <section data-nimib-slide-number="60" data-auto-animate >
+      <section data-nimib-slide-number="57" data-auto-animate >
       <h3>Document the domain</h3>
       <p>e.g. <strong>Business</strong>, <em>Domain</em> and <strong>Data</strong> essentials in README</p>
       <pre><code class="language-md">- Company X is investing strategically in 3rd party logistics
 - Low costs are key to a successful operation
 </code></pre>
       </section>
-      <section data-nimib-slide-number="61" data-auto-animate >
+      <section data-nimib-slide-number="58" data-auto-animate >
       <h3>Document the domain</h3>
       <p>e.g. <strong>Business</strong>, <em>Domain</em> and <strong>Data</strong> essentials in README</p>
       <pre><code class="language-md">- Company X is investing strategically in 3rd party logistics
@@ -1064,7 +1007,7 @@ tool that shows data and visualization.</p>
 - Using a ABC class based positioning of items could help
 </code></pre>
       </section>
-      <section data-nimib-slide-number="62" data-auto-animate >
+      <section data-nimib-slide-number="59" data-auto-animate >
       <h3>Document the domain</h3>
       <p>e.g. <strong>Business</strong>, <em>Domain</em> and <strong>Data</strong> essentials in README</p>
       <pre><code class="language-md">- Company X is investing strategically in 3rd party logistics
@@ -1077,7 +1020,7 @@ tool that shows data and visualization.</p>
 - We have 2 years of data, 1 year of clean data
 </code></pre>
       </section>
-      <section data-nimib-slide-number="63" data-auto-animate >
+      <section data-nimib-slide-number="60" data-auto-animate >
       <h3>Learn the Domain</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -1092,7 +1035,7 @@ tool that shows data and visualization.</p>
       </div>
       </div>
       </section>
-      <section data-nimib-slide-number="64" data-auto-animate >
+      <section data-nimib-slide-number="61" data-auto-animate >
       <h3>Learn the Domain</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -1111,7 +1054,7 @@ tool that shows data and visualization.</p>
       </div>
       </div>
       </section>
-      <section data-nimib-slide-number="65" data-auto-animate >
+      <section data-nimib-slide-number="62" data-auto-animate >
       <h3>Learn the Domain</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -1134,7 +1077,7 @@ tool that shows data and visualization.</p>
       </div>
       </div>
       </section>
-      <section data-nimib-slide-number="66" data-auto-animate >
+      <section data-nimib-slide-number="63" data-auto-animate >
       <h3>Learn the Domain</h3>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
@@ -1168,7 +1111,7 @@ tool that shows data and visualization.</p>
 </ul>
 
 </aside>
-      <section data-nimib-slide-number="67" >
+      <section data-nimib-slide-number="64" >
       <h3>Get inspired by Domain</h3>
 <p><strong>5S methodology</strong></p>
 <ol>
@@ -1190,29 +1133,41 @@ tool that shows data and visualization.</p>
 </aside>
       </section>
       </section>
+      <section data-nimib-slide-number="65" data-auto-animate >
+      <h3>Conclusions</h3>
+      </section>
+      <section data-nimib-slide-number="66" data-auto-animate >
+      <h3>Conclusions</h3>
+      <ul>
+<li><em>Domain</em>: a worthy and relatively untapped opportunity for Data Scientist</li>
+</ul>
+      </section>
+      <section data-nimib-slide-number="67" data-auto-animate >
+      <h3>Conclusions</h3>
+      <ul>
+<li><em>Domain</em>: a worthy and relatively untapped opportunity for Data Scientist</li>
+</ul>
+      <ul>
+<li>More <strong>complexity</strong> than you might expect</li>
+</ul>
+      </section>
       <section data-nimib-slide-number="68" data-auto-animate >
       <h3>Conclusions</h3>
+      <ul>
+<li><em>Domain</em>: a worthy and relatively untapped opportunity for Data Scientist</li>
+</ul>
+      <ul>
+<li>More <strong>complexity</strong> than you might expect</li>
+</ul>
+      <ul>
+<li>Inspired to learn and talk about your domain? 💡</li>
+</ul>
       </section>
       <section data-nimib-slide-number="69" data-auto-animate >
       <h3>Conclusions</h3>
       <ul>
 <li><em>Domain</em>: a worthy and relatively untapped opportunity for Data Scientist</li>
 </ul>
-      </section>
-      <section data-nimib-slide-number="70" data-auto-animate >
-      <h3>Conclusions</h3>
-      <ul>
-<li><em>Domain</em>: a worthy and relatively untapped opportunity for Data Scientist</li>
-</ul>
-      <ul>
-<li>More <strong>complexity</strong> than you might expect</li>
-</ul>
-      </section>
-      <section data-nimib-slide-number="71" data-auto-animate >
-      <h3>Conclusions</h3>
-      <ul>
-<li><em>Domain</em>: a worthy and relatively untapped opportunity for Data Scientist</li>
-</ul>
       <ul>
 <li>More <strong>complexity</strong> than you might expect</li>
 </ul>
@@ -1220,19 +1175,7 @@ tool that shows data and visualization.</p>
 <li>Inspired to learn and talk about your domain? 💡</li>
 </ul>
       </section>
-      <section data-nimib-slide-number="72" data-auto-animate >
-      <h3>Conclusions</h3>
-      <ul>
-<li><em>Domain</em>: a worthy and relatively untapped opportunity for Data Scientist</li>
-</ul>
-      <ul>
-<li>More <strong>complexity</strong> than you might expect</li>
-</ul>
-      <ul>
-<li>Inspired to learn and talk about your domain? 💡</li>
-</ul>
-      </section>
-      <section data-nimib-slide-number="73" >
+      <section data-nimib-slide-number="70" >
       <h1>🙏</h1>
       <small><p>🧑‍💻 <a href="https://github.com/pietroppeter">github.com/pietroppeter</a></p></small>
       <small><p>🦋 <a href="https://bsky.app/profile/pietroppeter.bsky.social">@pietroppeter.bsky.social</a></p></small>
@@ -1240,25 +1183,26 @@ tool that shows data and visualization.</p>
       <p>👨‍💼 <a href="https://www.linkedin.com/in/pietro-peterlongo-b7605627/">LinkedIn - Pietro Peterlongo</a></p>
       <p>🔵⚪️ <a href="https://www.agilelab.it/">agilelab.it</a></p>
       </section>
-      <section data-nimib-slide-number="74" >
-      <small><p>Our Public handbook 📘 <a href="handbook.agilelab.it">handbook.agilelab.it</a> documents how we work and some of the perks, including:</p></small>
+      <section data-nimib-slide-number="71" >
+      <small><p>We have a Public handbook 📘 <a href="handbook.agilelab.it">handbook.agilelab.it</a></p></small>
       <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); overflow-wrap: break-word; column-gap: 1.0 em;">
   
       <div>
+      <small><p>Self-management system (Holacracy)</p></small>
       <figure>
 <img src="images/hola.png" alt="">
 <figcaption></figcaption>
 </figure>
-      <small><p>Self-management system (Holacracy)</p></small>
       </div>
       <div>
+      <small><p>Agile Nomads (work 2 weeks from Canary Islands)</p></small>
       <figure>
 <img src="images/nomads.png" alt="">
 <figcaption></figcaption>
 </figure>
-      <small><p>Agile Nomads (work 2 weeks from Canary Islands)</p></small>
       </div>
       </div>
+      <small><p>we are hiring <a href="careers.agilelab.it">careers.agilelab.it</a></p></small>
       </section>
     </div>
   </div>
